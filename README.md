@@ -1,0 +1,1 @@
+L’édition de la [correspondance du chancelier Antoine Du Bourg (1535-1538)](http://elec.enc.sorbonne.fr/dubourg/), placée sous la responsabilité scientifique d'Olivier Poncet, professeur à l'École nationale des chartes, a été développée sur le plan informatique par Camille Desenclos.
