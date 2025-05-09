@@ -55,7 +55,7 @@
           <citeData use="head[1]" property="dc:title"/>
           <citeData use="argument[1]" property="description"/>
           <citeStructure match="text" use="@xml:id" unit="lettre">
-            <citeData use="front[1]/head[1]" property="dc:title"/>
+            <citeData use="concat(front[1]/head[1], ' (', front[1]/docDate[1]/date[1], ')')" property="dc:title"/>
             <citeData use="front[1]/docDate[1]/date[1]/@when" property="dc:date"/>
             <citeData use="front[1]/argument[1]" property="description"/>
           </citeStructure>
