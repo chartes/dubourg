@@ -6,12 +6,15 @@
   <mapping>
     <dc:title scope="collection" format="tsv" source="./default_collections_titles.tsv" resourceId="collection_id" value="title"/>
     <dc:creator scope="collection" format="tsv" source="./default_collections_titles.tsv" resourceId="collection_id" value="author"/>
+    <dc:date scope="collection" resourceId="all">1535-1538</dc:date>
     <description scope="collection" format="tsv" source="./default_collections_titles.tsv" resourceId="collection_id" value="desc"/>
     <dct:publisher scope="collection" resourceId="all">École nationale des chartes</dct:publisher>
-    <dct:license scope="collection" resourceId="all">https://creativecommons.org/licenses/by-nc-nd/3.0/fr/</dct:license>
+    <dct:license scope="collection" resourceId="all">https://creativecommons.org/licenses/by-nc-sa/4.0/</dct:license>
     
     <dc:title scope="document" xpath="/TEI/teiHeader/fileDesc/titleStmt/title"/>
-    <dct:creator scope="document" resourceId="all">https://fr.wikipedia.org/wiki/Antoine_du_Bourg</dct:creator>
+    <dct:creator scope="document" key="@id" resourceId="all">https://portail.biblissima.fr/fr/ark:/43093/pdatab77ea5a3b244973c8d78b81b8961109db0de47bc</dct:creator>
+    <dct:creator scope="document" key="@id" resourceId="all">https://fr.wikipedia.org/wiki/Antoine_du_Bourg</dct:creator>
+    <dct:creator scope="document" key="@id" resourceId="all">https://www.wikidata.org/wiki/Q955125</dct:creator>
     <dct:license scope="document" resourceId="all">https://creativecommons.org/licenses/by-nc-sa/4.0/</dct:license>
     <download scope="document" xpath="let $id := /TEI/@xml:id return concat('https://dev.chartes.psl.eu/dots/api/dts/document?resource=', $id)" key="XML"/>
   </mapping>
