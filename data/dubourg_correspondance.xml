@@ -3,10 +3,10 @@
   <teiHeader>
     <fileDesc>  
       <titleStmt>
-        <title>Correspondance d'Antoine Du Bourg (1535-1538)</title>
+        <title ref="http://elec.enc.sorbonne.fr/dubourg/">Correspondance d'Antoine Du Bourg (1535-1538)</title>
         <title type="short">Correspondance Du Bourg</title>
-        <author ref="https://portail.biblissima.fr/ark:/43093/pdatab77ea5a3b244973c8d78b81b8961109db0de47bc">Antoine Du Bourg</author>
-        <principal xml:id="OP" ref="https://www.idref.fr/034384227 https://data.bnf.fr/ark:/12148/cb12514512v">Olivier Poncet</principal>
+        <author ref="https://www.wikidata.org/wiki/Q955125 https://portail.biblissima.fr/ark:/43093/pdatab77ea5a3b244973c8d78b81b8961109db0de47bc https://www.idref.fr/151862893">Antoine Du Bourg</author>
+        <principal xml:id="OP" ref="https://data.bnf.fr/ark:/12148/cb12514512v https://www.idref.fr/034384227">Olivier Poncet</principal>
         <editor ref="https://www.idref.fr/187410100">Camille Desenclos</editor>
         <respStmt>
           <name xml:id="CD">Camille Desenclos</name>
@@ -19,56 +19,27 @@
       </editionStmt>
       <extent/>
       <publicationStmt>
-        <date when="2011">2011</date>
-        <idno>http://elec.enc.sorbonne.fr/dubourg_correspondance</idno>
-        <publisher ref="https://www.chartes.psl.eu/">École nationale des Chartes – PSL</publisher>
+        <date>2026</date>
+        <idno>http://elec.enc.sorbonne.fr/dubourg/dubourg_correspondance</idno>
+        <publisher ref="https://www.chartes.psl.eu/">École nationale des chartes – PSL</publisher>
         <address>
-          <addrLine>19, rue de la Sorbonne</addrLine>
-          <addrLine>75005 Paris</addrLine>
+          <addrLine>65, rue de Richelieu</addrLine>
+          <addrLine>75002 Paris</addrLine>
           <addrLine>tél.: +33 (0)1 55 42 75 00</addrLine>
-          <addrLine>http://enc.sorbonne.fr/</addrLine>
-          <addrLine>recherche@enc.sorbonne.fr</addrLine>
+          <addrLine>https://www.chartes.psl.eu/</addrLine>
         </address>
         <availability status="restricted">
-          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</licence>
-          <p>L'École nationale des chartes met à disposition cette ressource électronique
-            structurée, protégée par le code de la propriété intellectuelle sur les
-            bases de données (L341-1), selon les termes de la licence *Creative Commons*
-            : «Paternité - Pas d'Utilisation Commerciale - Pas de Modification; 2.0
-            France». Cette licence est disponible en ligne
-            http://creativecommons.org/licenses/by-nc-nd/2.0/fr/ ou par courrier postal
-            à Creative Commons, 171 Second Street, Suite 300, San Francisco, California
-            94105, USA.</p>
-          <p>*Pas d'Utilisation Commerciale*: L'École nationale des chartes souhaite
-            encourager l'utilisation et l'amélioration de ses ressources électroniques,
-            pour les intérêts de l'enseignement et de la recherche. Toute autorisation
-            au-delà du champ de cette licence doit être obtenue auprès de l'École
-            nationale des chartes.</p>
-          <p>*Pas de Modification*: Afin de mieux servir la communauté scientifique,
-            l'École nationale des chartes s'engage à conserver et à toujours offrir
-            publiquement la version la plus à jour de ses ressources électroniques par
-            une URI pérenne. Elle s'engage à les corriger et à les améliorer, à intégrer
-            les contributions qui lui sont soumises (après validation par un comité
-            scientifique), et à référencer l'origine de ces contributions. Toute
-            modification de la ressource qui ne serait pas reversée à la version de
-            référence sous l'autorité éditoriale de l'École nationale des chartes doit
-            faire l'objet de l'accord de celle-ci, afin de ne pas disperser les
-            contributions et de permettre les meilleures conditions possibles de
-            collaboration scientifique.</p>
-          <p>*Paternité*: l'École nationale des chartes demande à ce que toute publication
-            dérivée de ses ressources électroniques comporte: 1) le nom de l'École
-            nationale des chartes et, pour les publications électroniques, son logo 2)
-            l'URI permettant d'accéder à la page citée sur notre site, ou à la page
-            d'accueil de la ressource 3) la date du fichier source utilisé.</p>
-          <p>Tout litige soulevé par le non respect des termes de cette licence sera
-            soumis à la juridiction des tribunaux de Paris.</p>
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">© École nationale des chartes - PSL (CC-BY-NC-SA 4.0)</licence>
         </availability>
       </publicationStmt>
       <seriesStmt>
-        <title>Éditions en ligne de l'École des Chartes (ÉLEC)</title>
+        <title>Éditions en ligne de l'École des chartes (ÉLEC)</title>
         <idno type="URI">http://elec.enc.sorbonne.fr</idno>
-        <idno type="vol"><!-- à renseigner, voir avec O. Canteaut --></idno>
+        <idno type="vol">21</idno>
       </seriesStmt>
+      <notesStmt>
+        <note type="citation">Olivier Poncet, Camille Desenclos (éd.), Correspondance d'Antoine Du Bourg (1535-1538), École nationale des chartes – PSL, 2026.</note>
+      </notesStmt>
       <sourceDesc>
         <msDesc>
           <msIdentifier>
@@ -81,7 +52,7 @@
     </fileDesc>
     <encodingDesc>
       <projectDesc>
-        <p/>
+        <p>Édition électronique de la correspondance du chancelier Antoine Du Bourg (1535-1538), publiée dans le cadre des Éditions en ligne de l'École des chartes.</p>
       </projectDesc>
       <refsDecl>
         <citeStructure match="/TEI[1]/text[1]/front[1]" use="default" unit="introduction">
@@ -111,6 +82,13 @@
       <langUsage>
         <language ident="fr"/>
       </langUsage>
+      <textClass>
+        <keywords>
+          <term type="temporalCoverage">
+            <date notBefore="1535" notAfter="1538">1535/1538</date>
+          </term>
+        </keywords>
+      </textClass>
     </profileDesc>
     <revisionDesc>
       <change who="CD" when="2010-11">Création et premiers tests</change>
