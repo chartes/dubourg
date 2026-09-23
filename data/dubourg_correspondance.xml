@@ -1,12 +1,11 @@
-<?xml-model href="/home/ppons/Documents/Work/elec/cartulaires_v2/test_2026/cartulaires/schema/cartulaires.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dubourg_correspondance">
+<?xml-model href="/home/ppons/Documents/Work/elec/cartulaires_v2/test_2026/cartulaires/schema/cartulaires.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dubourg_correspondance">
   <teiHeader>
     <fileDesc>  
       <titleStmt>
-        <title ref="http://elec.enc.sorbonne.fr/dubourg/">Correspondance d'Antoine Du Bourg (1535-1538)</title>
+        <title>Correspondance d'Antoine Du Bourg (1535-1538)</title>
         <title type="short">Correspondance Du Bourg</title>
-        <author ref="https://www.wikidata.org/wiki/Q955125 https://portail.biblissima.fr/ark:/43093/pdatab77ea5a3b244973c8d78b81b8961109db0de47bc https://www.idref.fr/151862893">Antoine Du Bourg</author>
-        <principal xml:id="OP" ref="https://data.bnf.fr/ark:/12148/cb12514512v https://www.idref.fr/034384227">Olivier Poncet</principal>
+        <author ref="https://portail.biblissima.fr/ark:/43093/pdatab77ea5a3b244973c8d78b81b8961109db0de47bc">Antoine Du Bourg</author>
+        <principal xml:id="OP" ref="https://www.idref.fr/034384227 https://data.bnf.fr/ark:/12148/cb12514512v">Olivier Poncet</principal>
         <editor ref="https://www.idref.fr/187410100">Camille Desenclos</editor>
         <respStmt>
           <name xml:id="CD">Camille Desenclos</name>
@@ -19,27 +18,56 @@
       </editionStmt>
       <extent/>
       <publicationStmt>
-        <date>2026</date>
-        <idno>http://elec.enc.sorbonne.fr/dubourg/dubourg_correspondance</idno>
-        <publisher ref="https://www.chartes.psl.eu/">École nationale des chartes – PSL</publisher>
+        <date when="2011">2011</date>
+        <idno>http://elec.enc.sorbonne.fr/dubourg_correspondance</idno>
+        <publisher ref="https://www.chartes.psl.eu/">École nationale des Chartes – PSL</publisher>
         <address>
-          <addrLine>65, rue de Richelieu</addrLine>
-          <addrLine>75002 Paris</addrLine>
+          <addrLine>19, rue de la Sorbonne</addrLine>
+          <addrLine>75005 Paris</addrLine>
           <addrLine>tél.: +33 (0)1 55 42 75 00</addrLine>
-          <addrLine>https://www.chartes.psl.eu/</addrLine>
+          <addrLine>http://enc.sorbonne.fr/</addrLine>
+          <addrLine>recherche@enc.sorbonne.fr</addrLine>
         </address>
         <availability status="restricted">
-          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">© École nationale des chartes - PSL (CC-BY-NC-SA 4.0)</licence>
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</licence>
+          <p>L'École nationale des chartes met à disposition cette ressource électronique
+            structurée, protégée par le code de la propriété intellectuelle sur les
+            bases de données (L341-1), selon les termes de la licence *Creative Commons*
+            : «Paternité - Pas d'Utilisation Commerciale - Pas de Modification; 2.0
+            France». Cette licence est disponible en ligne
+            http://creativecommons.org/licenses/by-nc-nd/2.0/fr/ ou par courrier postal
+            à Creative Commons, 171 Second Street, Suite 300, San Francisco, California
+            94105, USA.</p>
+          <p>*Pas d'Utilisation Commerciale*: L'École nationale des chartes souhaite
+            encourager l'utilisation et l'amélioration de ses ressources électroniques,
+            pour les intérêts de l'enseignement et de la recherche. Toute autorisation
+            au-delà du champ de cette licence doit être obtenue auprès de l'École
+            nationale des chartes.</p>
+          <p>*Pas de Modification*: Afin de mieux servir la communauté scientifique,
+            l'École nationale des chartes s'engage à conserver et à toujours offrir
+            publiquement la version la plus à jour de ses ressources électroniques par
+            une URI pérenne. Elle s'engage à les corriger et à les améliorer, à intégrer
+            les contributions qui lui sont soumises (après validation par un comité
+            scientifique), et à référencer l'origine de ces contributions. Toute
+            modification de la ressource qui ne serait pas reversée à la version de
+            référence sous l'autorité éditoriale de l'École nationale des chartes doit
+            faire l'objet de l'accord de celle-ci, afin de ne pas disperser les
+            contributions et de permettre les meilleures conditions possibles de
+            collaboration scientifique.</p>
+          <p>*Paternité*: l'École nationale des chartes demande à ce que toute publication
+            dérivée de ses ressources électroniques comporte: 1) le nom de l'École
+            nationale des chartes et, pour les publications électroniques, son logo 2)
+            l'URI permettant d'accéder à la page citée sur notre site, ou à la page
+            d'accueil de la ressource 3) la date du fichier source utilisé.</p>
+          <p>Tout litige soulevé par le non respect des termes de cette licence sera
+            soumis à la juridiction des tribunaux de Paris.</p>
         </availability>
       </publicationStmt>
       <seriesStmt>
-        <title>Éditions en ligne de l'École des chartes (ÉLEC)</title>
+        <title>Éditions en ligne de l'École des Chartes (ÉLEC)</title>
         <idno type="URI">http://elec.enc.sorbonne.fr</idno>
-        <idno type="vol">21</idno>
+        <idno type="vol"><!-- à renseigner, voir avec O. Canteaut --></idno>
       </seriesStmt>
-      <notesStmt>
-        <note type="citation">Olivier Poncet, Camille Desenclos (éd.), Correspondance d'Antoine Du Bourg (1535-1538), École nationale des chartes – PSL, 2026.</note>
-      </notesStmt>
       <sourceDesc>
         <msDesc>
           <msIdentifier>
@@ -52,7 +80,7 @@
     </fileDesc>
     <encodingDesc>
       <projectDesc>
-        <p>Édition électronique de la correspondance du chancelier Antoine Du Bourg (1535-1538), publiée dans le cadre des Éditions en ligne de l'École des chartes.</p>
+        <p/>
       </projectDesc>
       <refsDecl>
         <citeStructure match="/TEI[1]/text[1]/front[1]" use="default" unit="introduction">
@@ -82,13 +110,6 @@
       <langUsage>
         <language ident="fr"/>
       </langUsage>
-      <textClass>
-        <keywords>
-          <term type="temporalCoverage">
-            <date notBefore="1535" notAfter="1538">1535/1538</date>
-          </term>
-        </keywords>
-      </textClass>
     </profileDesc>
     <revisionDesc>
       <change who="CD" when="2010-11">Création et premiers tests</change>
@@ -100,7 +121,7 @@
     </revisionDesc>
   </teiHeader>
   <text>
-    <front><!-- Introduction générale -->
+    <front xml:id="r268"><!-- Introduction générale -->
       <head>La correspondance du chancelier Antoine Du Bourg (1535-1538)</head>
       <argument>
         <p>Originaire d'Auvergne, Antoine Du Bourg (v. 1490-1538) a fait une carrière de magistrat au service de la monarchie en devenant successivement lieutenant civil au Châtelet de paris (1526), puis maître des requêtes (1532) puis président à mortier du parlement de Paris (1534), tout en recevant des commissions de confiance auprès de Louise de Savoie ou pour accompagner la répression contre les financiers après 1527. Au décès de son mentor et compatriote Antoine Duprat, il fut nommé le 16 juillet 1535 chancelier de France, office qu'il détint jusqu'à sa mort accidentelle le 28 octobre 1538. Il exerça cette fonction dans un contexte de guerre presque permanent (de février 1536 à juin 1538) ainsi qu'en témoigne son exceptionnelle correspondance passive.</p>
@@ -114,7 +135,7 @@
     </front>
     <group>
       <head>Correspondance d'Antoine Du Bourg</head>
-      <group>
+      <group xml:id="r320">
         <head>Enquête sur la Great Bible</head>
         <argument>
           <head>Relation de l'examen de la première version de la Great Bible anglaise de Henri VIII à Paris en 1538</head>
@@ -182,7 +203,7 @@
         </body>
         </text>
       </group>
-      <group>
+      <group xml:id="r712">
         <head>Année 1536</head>
         <text xml:id="dubourg_correspondance_l1" n="1" subtype="split">
           <front>
@@ -1232,7 +1253,7 @@
           </back>
         </text>
       </group>
-      <group>
+      <group xml:id="r5618">
         <head>Année 1537</head>
         <text xml:id="dubourg_correspondance_l30" n="30">
           <front>
@@ -3277,7 +3298,7 @@
           pour ne pas avoir à créer une div factice (utile ici à la gestion du split) -->
         <div subtype="split" xml:id="dubourg_correspondance_idx_person">
           <head>Noms de personnes</head>
-          <listPerson>
+          <listPerson xml:id="r15496">
             <person xml:id="Albret">
               <persName>Albert, Henri d'</persName>
               <birth>1503</birth>
@@ -4068,7 +4089,7 @@
           </listPerson></div>
         <div subtype="split" xml:id="dubourg_correspondance_idx_place">
           <head>Noms de lieux</head>
-          <listPlace>
+          <listPlace xml:id="r17361">
             <place xml:id="Ablon">
               <placeName>Ablon-sur-Seine</placeName>
               <location>
