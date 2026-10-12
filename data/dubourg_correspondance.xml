@@ -7,13 +7,13 @@
         <author ref="https://portail.biblissima.fr/ark:/43093/pdatab77ea5a3b244973c8d78b81b8961109db0de47bc">Antoine Du Bourg</author>
         <principal xml:id="OP" ref="https://www.idref.fr/034384227 https://data.bnf.fr/ark:/12148/cb12514512v">Olivier Poncet</principal>
         <editor ref="https://www.idref.fr/187410100">Camille Desenclos</editor>
+        <funder>École nationale des Chartes – PSL</funder>
         <respStmt>
           <name xml:id="CD">Camille Desenclos</name>
           <resp>Édition électronique</resp>
         </respStmt>
       </titleStmt>
       <editionStmt n="1">
-        <funder>École nationale des Chartes – PSL</funder>
         <p>2011, première édition électronique.</p>
       </editionStmt>
       <extent/>
@@ -68,6 +68,9 @@
         <idno type="URI">http://elec.enc.sorbonne.fr</idno>
         <idno type="vol"><!-- à renseigner, voir avec O. Canteaut --></idno>
       </seriesStmt>
+      <notesStmt>
+        <note type="citation">Olivier Poncet (dir.), Camille Desenclos (éd.), Correspondance d'Antoine Du Bourg (1535-1538), École nationale des chartes – PSL, 2011.</note>
+      </notesStmt>
       <sourceDesc>
         <msDesc>
           <msIdentifier>

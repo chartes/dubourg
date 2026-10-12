@@ -29,6 +29,7 @@
     <dct:source scope="document" xpath="for $ms in /TEI/teiHeader/fileDesc/sourceDesc/msDesc/msIdentifier return concat($ms/settlement, ', ', $ms/repository, ', ', $ms/idno)"/>
     <dct:publisher scope="document" xpath="/TEI/teiHeader/fileDesc/publicationStmt/publisher"/>
     <dct:issued scope="document" xpath="/TEI/teiHeader/fileDesc/publicationStmt/date[1]"/>
+    <dct:bibliographicCitation scope="document" xpath="/TEI/teiHeader/fileDesc/notesStmt/note[@type='citation']"/>
     <dct:description scope="document" xpath="/TEI/teiHeader/encodingDesc/projectDesc/p"/>
     <dct:license scope="document" xpath="/TEI/teiHeader/fileDesc/publicationStmt/availability/licence/@target"/>
     <dct:rights scope="document" xpath="/TEI/teiHeader/fileDesc/publicationStmt/availability/licence"/>
@@ -61,8 +62,10 @@
       <dots:objectProperty name="name" xpath="."/>
     </schema:publisher>
     <schema:datePublished scope="document" xpath="/TEI/teiHeader/fileDesc/publicationStmt/date[1]"/>
+    <schema:creditText scope="document" xpath="/TEI/teiHeader/fileDesc/notesStmt/note[@type='citation']"/>
     <schema:description scope="document" xpath="/TEI/teiHeader/encodingDesc/projectDesc/p"/>
     <schema:license scope="document" xpath="/TEI/teiHeader/fileDesc/publicationStmt/availability/licence/@target"/>
+    <schema:funder scope="document" xpath="/TEI/teiHeader/fileDesc/titleStmt/funder"/>
     <schema:encoding scope="document" xpath="/TEI/@xml:id" type="object">
       <dots:objectProperty name="@type" resourceId="all">schema:MediaObject</dots:objectProperty>
       <dots:objectProperty name="encodingFormat" resourceId="all">application/tei+xml</dots:objectProperty>
