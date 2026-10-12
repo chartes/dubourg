@@ -26,9 +26,6 @@
        I. Du texte vers l'index  [v2 H3 : faisait partie de Diple, pas de la feuille]
        ==================================================================== -->
 
-  <!-- Identifiants DoTS des deux pages d'index. Ce sont ceux que DoTS calcule à l'ingestion
-       (citeStructure en use="default", d'après le numéro de nœud) : ils changeront si le TEI
-       change, tant que l'index n'a pas d'identifiant stable (use="@xml:id"). -->
   <xsl:variable name="index-personnes" select="'dubourg_correspondance_idx_person'"/>
   <xsl:variable name="index-lieux" select="'dubourg_correspondance_idx_place'"/>
 
