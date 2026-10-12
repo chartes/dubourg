@@ -28,13 +28,15 @@ schema/      le schéma RELAX NG de l'édition
 
 - `data/dubourg_correspondance.xml` : la source TEI de l'édition.
 - `metadata/dots_metadata_mapping.xml` : l'exposition des métadonnées Dublin Core
-  et Schema.org à partir du `teiHeader`.
-- `metadata/collection.csv` : les métadonnées de la collection `dubourg`
-  (fichier tabulé ; le nom est celui que porte le document dans la base).
-- `transform/dubourg.xsl` : la surcharge de rendu du corpus. Comme celle des
-  autres corpus DoTS, elle importe la feuille générique `hteiml/xsl/tei2html.xsl`
-  et ne redéfinit que les spécificités de l'édition ; elle doit donc être
-  installée à côté de `hteiml/` et n'est pas utilisable isolément.
+  et Schema.org à partir du `teiHeader`, générée par le script
+  `dots_metadata_mapping_elec_builder`.
+- `metadata/collection.tsv` : les métadonnées de la collection `dubourg`, avec les
+  noms de colonnes qu'attend ce script (`creator`, `issued`, `publisher_uri`…).
+- `transform/dubourg.xsl` : la surcharge de rendu du corpus. Elle importe le
+  renderer hteiml (`../../renderers/hteiml/xsl/tei2html.xsl`) et ajoute les liens
+  du texte vers l'index ainsi que la feuille de l'ÉLEC historique
+  (`dubourg_html.xsl`), adaptée à hteiml ; elle doit donc être installée dans le
+  `transform/dubourg/` de DoTS et n'est pas utilisable isolément.
 - `schema/correspondance.rng` : le schéma RELAX NG de l'édition.
 
 ## Provenance des fichiers

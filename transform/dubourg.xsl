@@ -3,200 +3,253 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:tei="http://www.tei-c.org/ns/1.0"
-  xmlns:dts="https://w3id.org/dts/api#"
-  exclude-result-prefixes="tei dts">
+  exclude-result-prefixes="tei">
 
-  <xsl:import href="../hteiml/xsl/tei2html.xsl"/>
-  <xsl:output indent="no"/><!-- autopilote 2026-09-11 : sinon DoTS-vue colle les mots (condense) -->
+  <!-- [v2 H1] La feuille historique importait Diple (../../diple/transform/tei_html.xsl). -->
+  <xsl:import href="../../renderers/hteiml/xsl/tei2html.xsl"/>
+  <!-- [v2 H4] Sans indent="no", l'indentation de la sortie coupe les mots (« iiii e d'aoust »). -->
+  <xsl:output indent="no"/>
 
   <!--
     Surcharge Du Bourg.
 
-    Le projet n'avait aucune XSL propre : il tombait sur le HTEIML générique, qui
-    ne connaît ni l'élément non-TEI <nota> (extension Diple), ni <opener>, ni les
-    listes d'index <listPerson>/<listPlace>. Ces éléments ressortaient donc en
-    « balises d'erreur » rouges (<b style="color:red">&lt;listPerson&gt;</b>) :
-    4 122 occurrences sur les 102 pages du corpus, dont les deux pages d'index
-    entièrement illisibles. De plus, <persName ref="#X"> / <placeName ref="#X">
-    perdaient leur lien : le HTEIML produisait un <a> SANS href.
-
-    Référence de rendu : l'ÉLEC historique
-    (http://elec.enc.sorbonne.fr/dubourg/l1, .../back-1-1, .../back-1-2).
+    I.  Liens entre le texte et l'index : hteiml ne relie un nom à son entrée que si l'index
+        est dans l'arbre transformé, ce qui n'est jamais le cas sur le fragment d'une lettre.
+    II. Reprise de la feuille de l'ÉLEC historique
+        (http://elec.enc.sorbonne.fr/dubourg/transform/dubourg_html.xsl), qui fixait les
+        conventions d'édition des textes modernes demandées par O. Poncet. Les écarts avec
+        l'original sont marqués [v2 Hn] ; les commentaires [VJ]/[CD] sont d'origine.
+        [v2 H2] Le sommaire de Diple (mode « ul ») n'est pas repris : dots-vue fait le sien.
   -->
 
-  <!-- Identifiants DTS des deux pages d'index. Lorsque la liste est présente dans
-       l'arbre transformé (rendu du document entier) on lit son @xml:id ; sur un
-       fragment isolé (une lettre) elle est hors de portée, d'où le repli sur la
-       valeur du document. -->
-  <xsl:variable name="index-person-id">
-    <xsl:choose>
-      <xsl:when test="//tei:listPerson/@xml:id">
-        <xsl:value-of select="//tei:listPerson/@xml:id"/>
-      </xsl:when>
-      <xsl:otherwise>r15496</xsl:otherwise>
-    </xsl:choose>
-  </xsl:variable>
-  <xsl:variable name="index-place-id">
-    <xsl:choose>
-      <xsl:when test="//tei:listPlace/@xml:id">
-        <xsl:value-of select="//tei:listPlace/@xml:id"/>
-      </xsl:when>
-      <xsl:otherwise>r17361</xsl:otherwise>
-    </xsl:choose>
-  </xsl:variable>
-  <xsl:variable name="doc-base"
-    select="'/dubourg/document/dubourg_correspondance?refId='"/>
-
   <!-- ====================================================================
-       1) Renvois vers les index (ÉLEC : <a href="back-1-1#Roussy">…</a>)
+       I. Du texte vers l'index  [v2 H3 : faisait partie de Diple, pas de la feuille]
        ==================================================================== -->
-  <!-- Certains @ref du corpus omettent le croisillon (ref="Daugerant" au lieu de
-       ref="#Daugerant") : on le normalise, sinon l'ancre est collée au refId. -->
-  <xsl:template name="index-anchor">
-    <xsl:choose>
-      <xsl:when test="starts-with(@ref, '#')"><xsl:value-of select="@ref"/></xsl:when>
-      <xsl:otherwise><xsl:text>#</xsl:text><xsl:value-of select="@ref"/></xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
 
-  <xsl:template match="tei:persName[@ref]" priority="20">
-    <xsl:variable name="anchor"><xsl:call-template name="index-anchor"/></xsl:variable>
-    <a property="dbo:person" class="persName"
-       href="{$doc-base}{$index-person-id}{$anchor}">
-      <xsl:apply-templates/>
-    </a>
-  </xsl:template>
+  <!-- Identifiants DoTS des deux pages d'index. Ce sont ceux que DoTS calcule à l'ingestion
+       (citeStructure en use="default", d'après le numéro de nœud) : ils changeront si le TEI
+       change, tant que l'index n'a pas d'identifiant stable (use="@xml:id"). -->
+  <xsl:variable name="index-personnes" select="'r15500'"/>
+  <xsl:variable name="index-lieux" select="'r17366'"/>
 
-  <xsl:template match="tei:placeName[@ref]" priority="20">
-    <xsl:variable name="anchor"><xsl:call-template name="index-anchor"/></xsl:variable>
-    <a property="dbo:place" class="placeName"
-       href="{$doc-base}{$index-place-id}{$anchor}">
+  <!-- Le croisillon manque dans quelques @ref (ref="Daugerant") : on le retire s'il est là,
+       pour écrire l'ancre de la même façon dans tous les cas. Les <rs> (« le cardinal »)
+       disent par @type s'ils désignent une personne ou un lieu. -->
+  <xsl:template match="tei:persName[@ref] | tei:placeName[@ref]
+                       | tei:rs[@ref][@type = 'person' or @type = 'place']">
+    <xsl:variable name="personne" select="boolean(self::tei:persName or @type = 'person')"/>
+    <xsl:variable name="index">
+      <xsl:choose>
+        <xsl:when test="$personne"><xsl:value-of select="$index-personnes"/></xsl:when>
+        <xsl:otherwise><xsl:value-of select="$index-lieux"/></xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <a>
+      <xsl:choose>
+        <xsl:when test="$personne">
+          <xsl:attribute name="property">dbo:person</xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="property">dbo:place</xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:call-template name="atts"/>
+      <!-- Après « atts » : pour un @ref sans croisillon, hteiml y écrit href="Daugerant",
+           qui remplacerait notre lien si on le posait avant. -->
+      <xsl:attribute name="href">
+        <xsl:value-of select="concat('?refId=', $index, '#', translate(@ref, '#', ''))"/>
+      </xsl:attribute>
       <xsl:apply-templates/>
     </a>
   </xsl:template>
 
   <!-- ====================================================================
-       2) <nota> : élément non-TEI propre à Diple. ÉLEC rend
-          « [<i>adresse au dos</i>] À monsr le chancellier. »
+       II. Feuille historique de l'ÉLEC
        ==================================================================== -->
-  <xsl:template match="*[local-name() = 'nota']" priority="20">
-    <div class="nota">
-      <xsl:if test="@type">
-        <xsl:attribute name="data-type"><xsl:value-of select="@type"/></xsl:attribute>
-      </xsl:if>
-      <xsl:if test="normalize-space(@desc) != ''">
-        <xsl:text>[</xsl:text>
-        <i class="nota-desc"><xsl:value-of select="normalize-space(@desc)"/></i>
-        <xsl:text>] </xsl:text>
-      </xsl:if>
+
+  <!-- [VJ]pourquoi inscrire l'argument en italique ? cf les conventions pour les autres éditions
+    pattern génant pour la page d'accueil... -> [CD] demande d'O. Poncet, convention pour l'édition des textes modernes-->
+  <xsl:template match="tei:argument">
+    <p>
       <xsl:apply-templates/>
-    </div>
+    </p>
   </xsl:template>
-
-  <!-- ====================================================================
-       3) <opener> / <closer> : ÉLEC les rend comme des paragraphes de
-          transcription (leur enfant <salute> est déjà géré par le HTEIML).
-       ==================================================================== -->
-  <xsl:template match="tei:opener" priority="20">
-    <!-- <div> et non <p> : le HTEIML rend <salute> comme un <div>, qu'un <p>
-         ne peut pas contenir (le navigateur refermerait le paragraphe). -->
-    <div class="transcription opener"><xsl:apply-templates/></div>
-  </xsl:template>
-
-  <xsl:template match="tei:closer" priority="20">
-    <div class="transcription closer"><xsl:apply-templates/></div>
-  </xsl:template>
-
-  <!-- ====================================================================
-       4) Index des noms de personnes (ÉLEC : back-1-1)
-       ==================================================================== -->
-  <xsl:template match="tei:listPerson" priority="20">
-    <div id="index-person">
-      <ul class="index-list">
-        <xsl:apply-templates select="tei:person"/>
-      </ul>
-    </div>
-  </xsl:template>
-
-  <xsl:template match="tei:person" priority="20">
-    <li class="index-entry">
-      <xsl:if test="@xml:id">
-        <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
-      </xsl:if>
-      <span class="name index-name"><xsl:apply-templates select="tei:persName/node()"/></span>
-      <xsl:if test="tei:birth | tei:death">
-        <xsl:text> (</xsl:text>
-        <xsl:value-of select="normalize-space(tei:birth)"/>
-        <xsl:if test="tei:birth and tei:death"><xsl:text> – </xsl:text></xsl:if>
-        <xsl:if test="tei:death and not(tei:birth)"><xsl:text>† </xsl:text></xsl:if>
-        <xsl:value-of select="normalize-space(tei:death)"/>
-        <xsl:text>)</xsl:text>
-      </xsl:if>
-      <xsl:apply-templates select="tei:event"/>
-    </li>
-  </xsl:template>
-
-  <xsl:template match="tei:event" priority="20">
-    <div class="index-notice"><xsl:apply-templates/></div>
-  </xsl:template>
-
-  <!-- ====================================================================
-       5) Index des noms de lieux (ÉLEC : back-1-2)
-          « Ablon-sur-Seine, Val-de-Marne, arr. Créteil, cant. Villeneuve-le-Roi. »
-          Les mentions déjà rédigées (« ch.-l. d'arr. ») ne reçoivent pas de
-          préfixe, comme sur le site historique.
-       ==================================================================== -->
-  <xsl:template match="tei:listPlace" priority="20">
-    <div id="index-place">
-      <ul class="index-list">
-        <xsl:apply-templates select="tei:place"/>
-      </ul>
-    </div>
-  </xsl:template>
-
-  <xsl:template match="tei:place" priority="20">
-    <li class="index-entry">
-      <xsl:if test="@xml:id">
-        <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
-      </xsl:if>
-      <span class="name index-name"><xsl:apply-templates select="tei:placeName/node()"/></span>
-      <xsl:apply-templates select="tei:location"/>
-      <xsl:text>.</xsl:text>
-    </li>
-  </xsl:template>
-
-  <xsl:template match="tei:location" priority="20">
-    <span class="index-location">
-      <xsl:for-each select="tei:district | tei:settlement | tei:region | tei:country">
-        <xsl:text>, </xsl:text>
-        <xsl:variable name="txt" select="normalize-space(.)"/>
-        <xsl:choose>
-          <xsl:when test="@type = 'arrondissement' and not(starts-with($txt, 'ch.-l.'))">
-            <xsl:text>arr. </xsl:text>
-          </xsl:when>
-          <xsl:when test="@type = 'canton' and not(starts-with($txt, 'ch.-l.'))">
-            <xsl:text>cant. </xsl:text>
-          </xsl:when>
-        </xsl:choose>
-        <xsl:value-of select="$txt"/>
+  <xsl:template match="tei:argument/tei:p">
+    <xsl:choose>
+      <xsl:when test="@n">
+      <i>
+        <xsl:for-each select=".">
+        <a href="{@corresp}"><xsl:value-of select="@n"/></a>
+        <xsl:text>. </xsl:text>
       </xsl:for-each>
-    </span>
+    <xsl:apply-templates/>
+      </i>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:for-each select=".">
+          <p><xsl:apply-templates/></p>
+        </xsl:for-each>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
-  <!-- D5-DEBUT (autopilote 2026-09-12) : liens vers les anciens sites ELEC -->
-  <!-- hteiml fait un lien de tout tei:idno commencant par « http » (tei2html.xsl l. 1805),
-       du tei:title voisin d'un idno[@type='URI'] (l. 1796) et de tei:ref/@target (l. 1456).
-       Les anciens sites ELEC ferment : le TEXTE affiche est conserve mot pour mot (c'est
-       l'identifiant de la publication d'origine), seule la cible devient la route locale.
-       Table et bloc produits par dots-autopilot/scripts/d5_legacy_links_fix.py. -->
-  <!-- portail ELEC -->
-  <xsl:template match="tei:title[../tei:idno[@type = 'URI'][normalize-space(.) = 'http://elec.enc.sorbonne.fr' or normalize-space(.) = 'http://elec.enc.sorbonne.fr/']]" priority="14">
-    <a class="title d5-local" href="/"><xsl:apply-templates/></a>
+  <!-- [VJ]pourquoi centrer ? la convention qui prévaut jusqu'à pt ne convient pas ? cf poitou
+    TODO : revoir le template docDate pour prendre en charge le lieu...
+    [CD] demande d'O.Poncet, convention pour l'édition des textes modernes
+  -->
+  <xsl:template match="tei:docDate">
+    <p class="date">
+      <xsl:apply-templates select="./tei:date"/>
+      <xsl:text>. — </xsl:text>
+      <xsl:apply-templates select="./tei:placeName"/>
+    </p>
   </xsl:template>
-  <!-- adresse ELEC de cette edition -->
-  <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://elec.enc.sorbonne.fr/dubourg_correspondance']" priority="14">
-    <a class="idno d5-local" href="/dubourg"><xsl:apply-templates/></a>
+
+  <!-- inutile d'enchâsser ainsi les appels de templates ; pourquoi restructurer ainsi ? -->
+  <xsl:template match="tei:div[@type='transcription']">
+    <xsl:apply-templates select="./tei:nota[@type='adresse']"/>
+    <xsl:apply-templates select="./tei:opener"/>
+    <xsl:apply-templates select="./tei:p"/>
+    <xsl:apply-templates select="./tei:table"/>
+    <xsl:apply-templates select="./tei:closer"/>
+    <xsl:apply-templates select="./tei:postscript"/>
+    <xsl:apply-templates select="./tei:nota[@type='note']"/>
   </xsl:template>
-  <!-- D5-FIN -->
+
+  <xsl:template match="tei:div[@type='transcription']/tei:p">
+    <xsl:for-each select=".">
+      <p class="transcription" id="{@xml:id}">
+        <xsl:if test="@n">
+          <xsl:text>[</xsl:text>
+          <xsl:value-of select="@n"/>
+          <xsl:text>.] </xsl:text>
+        </xsl:if>
+        <xsl:apply-templates/></p>
+      </xsl:for-each>
+  </xsl:template>
+
+  <xsl:template match="tei:opener|tei:closer">
+    <xsl:apply-templates/>
+  </xsl:template>
+
+  <xsl:template match="tei:salute|tei:dateline">
+    <p class="transcription"><xsl:apply-templates/></p>
+  </xsl:template>
+
+  <!-- mise en petites cap de la signature comme annoncé dans le schéma.
+    Là encore, et comme pour le fer à droite, il faut déléguer le travail à CSS -->
+  <!-- [v2 H5] <name> n'est pas du HTML : <span>. -->
+  <xsl:template match="tei:signed">
+    <p class="signed"><span class="signed"><xsl:apply-templates/></span></p>
+  </xsl:template>
+
+  <xsl:template match="tei:nota|tei:postscript">
+    <xsl:if test="@desc"><xsl:text>[</xsl:text>
+    <i><xsl:value-of select="@desc"/></i>
+    <xsl:text>] </xsl:text></xsl:if>
+    <xsl:apply-templates/>
+  </xsl:template>
+
+
+  <xsl:template match="tei:listPerson">
+    <div id="index-person">
+      <ul>
+        <xsl:for-each select="./tei:person">
+          <xsl:sort order="ascending"/>
+          <li id="{./@xml:id}">
+            <xsl:apply-templates/>
+          </li>
+        </xsl:for-each>
+      </ul>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="tei:person">
+    <xsl:apply-templates/>
+  </xsl:template>
+
+  <!-- [v2 H5] <name style="font-variant:small-caps;"> : <span>, petites capitales en CSS. -->
+  <xsl:template match="tei:person/tei:persName">
+    <span class="index-name"><xsl:apply-templates/></span>
+  </xsl:template>
+
+  <xsl:template match="tei:birth">
+    <xsl:text>(</xsl:text>
+    <xsl:apply-templates/>
+  </xsl:template>
+
+  <xsl:template match="tei:death">
+    <xsl:if test="not(preceding-sibling::tei:birth)">
+      <xsl:text>(</xsl:text>
+    </xsl:if>
+    <xsl:text> - </xsl:text>
+    <xsl:apply-templates/>
+    <xsl:text>)</xsl:text>
+  </xsl:template>
+
+  <xsl:template match="tei:event">
+    <xsl:apply-templates/>
+  </xsl:template>
+
+  <xsl:template match="tei:listPlace">
+    <div id="index-place">
+      <ul>
+        <xsl:for-each select="./tei:place">
+          <xsl:sort order="ascending"/>
+          <li id="{./@xml:id}">
+            <xsl:apply-templates/>
+          </li>
+        </xsl:for-each>
+      </ul>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="tei:place">
+    <xsl:apply-templates select="./tei:placeName"/>
+    <xsl:apply-templates select="./tei:location"/>
+    <xsl:apply-templates select="./tei:event"/>
+  </xsl:template>
+
+  <!-- [v2 H5] <name style="font-variant:small-caps;"> : <span>, petites capitales en CSS. -->
+  <xsl:template match="tei:place/tei:placeName">
+    <span class="index-name"><xsl:apply-templates/></span>
+    <xsl:choose>
+      <xsl:when test="following-sibling::tei:location"><xsl:text>, </xsl:text>
+      </xsl:when>
+      <xsl:otherwise>.</xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="tei:location">
+    <xsl:apply-templates/>
+  </xsl:template>
+
+  <xsl:template match="tei:district|tei:country">
+    <xsl:if test="@type='arrondissement' and not(contains(.,'ch'))">
+      <xsl:text>arr. </xsl:text>
+    </xsl:if>
+    <xsl:if test="@type='canton' and not(contains(.,'ch'))">
+      <xsl:text>cant. </xsl:text>
+    </xsl:if>
+    <xsl:if test="@type='province' and not(contains(.,'ch'))">
+      <xsl:text>prov. </xsl:text>
+    </xsl:if>
+    <xsl:if test="@type='commune'">
+      <xsl:text>comm. </xsl:text>
+    </xsl:if>
+    <xsl:apply-templates/>
+    <xsl:choose>
+      <xsl:when test="not(following-sibling::tei:district)">
+        <!-- [v2 H6] Le TEI porte déjà le point final des abréviations (« ch.-l. de dép. ») :
+             ne pas en ajouter un second. -->
+        <xsl:if test="substring(normalize-space(.), string-length(normalize-space(.))) != '.'">
+          <xsl:text>.</xsl:text>
+        </xsl:if>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text>, </xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
 
 </xsl:transform>
