@@ -1,4 +1,4 @@
-<dots:metadataMap xmlns:dots="https://github.com/chartes/dots/" xmlns:dts="https://dtsapi.org/context/v1.0.json" xmlns:dct="http://purl.org/dc/terms/" xmlns:schema="https://schema.org/" xmlns:html="http://www.w3.org/1999/xhtml">
+<dots:metadataMap xmlns:dots="https://github.com/dots-suite/dots" xmlns:dts="https://dtsapi.org/context/v1.0.json" xmlns:dct="http://purl.org/dc/terms/" xmlns:schema="https://schema.org/" xmlns:html="http://www.w3.org/1999/xhtml">
   <dots:mapping>
     <dct:title scope="collection" source="./collection.csv" value="title"/>
     <dct:creator scope="collection" source="./collection.csv" value="author"/>
