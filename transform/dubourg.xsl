@@ -155,22 +155,14 @@
        III. Index des personnes : tableau triable et filtrable (2026-10-13)
        Modèle : Montferrand (index des noms). Le module commun fournit barre, en-têtes et
        filtres (classes tf-*) ; la feuille ne pose que les classes dub-* et les données.
-       Colonne « Lettres » : la page d'index est un fragment DoTS qui ne voit pas les
-       lettres. La feuille relit donc le XML du corpus lui-même, sans extrait ni fichier
-       engendré (même dispositif que montferrand.xsl) : déployé, dubourg_correspondance.xml
-       est posé à côté de la feuille, tel qu'il est versé dans BaseX ; dans le dépôt, il
-       est lu dans ../data/. Une lettre cite une personne ou un lieu par persName, placeName
-       ou rs @ref="#id" (les identifiants de personnes et de lieux sont distincts).
+       Colonne « Lettres » : les renvois sont dans le TEI, sous chaque entrée de l'index
+       (listRef type="lettres", un ref par lettre qui cite la personne ou le lieu) : la
+       page d'index se suffit, sans relire le reste du corpus.
        ==================================================================== -->
 
-  <xsl:variable name="dub-tei"
-    select="document((for $u in ('dubourg_correspondance.xml', '../data/dubourg_correspondance.xml')
-                      return resolve-uri($u, static-base-uri()))[doc-available(.)][1])"/>
-  <xsl:key name="dub-cite" match="tei:text[matches(@xml:id, '^dubourg_correspondance_l[0-9]+$')]"
-    use="distinct-values(.//(tei:persName | tei:placeName | tei:rs)/@ref[starts-with(., '#')] ! substring(., 2))"/>
 
   <xsl:template match="tei:listPerson">
-    <xsl:variable name="max-lettres" select="max(for $p in tei:person return count($dub-tei/key('dub-cite', string($p/@xml:id))))"/>
+    <xsl:variable name="max-lettres" select="max(for $p in tei:person return count($p/tei:listRef[@type = 'lettres']/tei:ref))"/>
     <div id="index-person">
       <div class="tf-cadre dub-tableau-cadre">
         <xsl:call-template name="tf-barre">
@@ -204,7 +196,7 @@
               <xsl:variable name="mort" select="normalize-space(tei:death)"/>
               <xsl:variable name="dates" select="normalize-space(if ($naissance = '' and $mort = '') then '' else concat($naissance, ' – ', $mort))"/>
               <xsl:variable name="annee" select="if (matches($naissance, '[0-9]{4}')) then replace($naissance, '^[^0-9]*([0-9]{4}).*$', '$1') else ''"/>
-              <xsl:variable name="lettres" select="$dub-tei/key('dub-cite', $id)"/>
+              <xsl:variable name="lettres" select="tei:listRef[@type = 'lettres']/tei:ref"/>
               <tr id="{$id}" class="dub-ligne" data-o="{position()}">
                 <td class="dub-c-nom" data-sort="{$nom}" data-f="{tf:plat(string($nom))}">
                   <xsl:apply-templates select="tei:persName"/>
@@ -221,13 +213,12 @@
                     <xsl:otherwise><span class="tf-vide dub-vide">—</span></xsl:otherwise>
                   </xsl:choose>
                 </td>
-                <td class="dub-c-lettres" data-sort="{count($lettres)}" data-f="{string-join($lettres/@n, ' ')}">
+                <td class="dub-c-lettres" data-sort="{count($lettres)}" data-f="{string-join($lettres ! normalize-space(.), ' ')}">
                   <xsl:choose>
                     <xsl:when test="$lettres">
                       <xsl:for-each select="$lettres">
-                        <xsl:sort select="number(@n)" data-type="number"/>
                         <xsl:if test="position() != 1"><xsl:text>, </xsl:text></xsl:if>
-                        <a href="?refId={@xml:id}" title="{normalize-space(tei:front/tei:head)} ({(.//tei:docDate/tei:date/@when)[1]})"><xsl:value-of select="@n"/></a>
+                        <a href="?refId={substring-after(@target, '#')}"><xsl:value-of select="normalize-space(.)"/></a>
                       </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise><span class="tf-vide dub-vide">—</span></xsl:otherwise>
@@ -286,7 +277,7 @@
 
   <xsl:template match="tei:listPlace" xmlns:dub="urn:dubourg:xsl">
     <xsl:variable name="uca" select="'http://www.w3.org/2013/collation/UCA?lang=fr;strength=primary'"/>
-    <xsl:variable name="max-lettres" select="max(for $p in tei:place return count($dub-tei/key('dub-cite', string($p/@xml:id))))"/>
+    <xsl:variable name="max-lettres" select="max(for $p in tei:place return count($p/tei:listRef[@type = 'lettres']/tei:ref))"/>
     <div id="index-place">
       <div class="tf-cadre dub-tableau-cadre">
         <xsl:call-template name="tf-barre">
@@ -329,7 +320,7 @@
                                        else if ($d/@type = 'province') then 'prov. '
                                        else if ($d/@type = 'commune') then 'comm. ' else '', normalize-space($d)),
                          if ($departement) then tei:location/tei:country ! normalize-space(.) else ())"/>
-              <xsl:variable name="lettres" select="$dub-tei/key('dub-cite', $id)"/>
+              <xsl:variable name="lettres" select="tei:listRef[@type = 'lettres']/tei:ref"/>
               <tr id="{$id}" class="dub-ligne" data-o="{position()}">
                 <td class="dub-c-nom" data-sort="{$nom}" data-f="{tf:plat($nom)}">
                   <span class="index-name"><xsl:apply-templates select="tei:placeName/node()"/></span>
@@ -350,13 +341,12 @@
                     <xsl:otherwise><span class="tf-vide dub-vide">—</span></xsl:otherwise>
                   </xsl:choose>
                 </td>
-                <td class="dub-c-lettres" data-sort="{count($lettres)}" data-f="{string-join($lettres/@n, ' ')}">
+                <td class="dub-c-lettres" data-sort="{count($lettres)}" data-f="{string-join($lettres ! normalize-space(.), ' ')}">
                   <xsl:choose>
                     <xsl:when test="$lettres">
                       <xsl:for-each select="$lettres">
-                        <xsl:sort select="number(@n)" data-type="number"/>
                         <xsl:if test="position() != 1"><xsl:text>, </xsl:text></xsl:if>
-                        <a href="?refId={@xml:id}" title="{normalize-space(tei:front/tei:head)} ({(.//tei:docDate/tei:date/@when)[1]})"><xsl:value-of select="@n"/></a>
+                        <a href="?refId={substring-after(@target, '#')}"><xsl:value-of select="normalize-space(.)"/></a>
                       </xsl:for-each>
                     </xsl:when>
                     <xsl:otherwise><span class="tf-vide dub-vide">—</span></xsl:otherwise>

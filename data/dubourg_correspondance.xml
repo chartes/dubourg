@@ -3306,6 +3306,9 @@
               <event>
                 <p>Roi de Navarre en 1516, époux de Marguerite d’Angoulême en 1527.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l7">7</ref>
+              </listRef>
             </person>
             <person xml:id="Alencon-Francoise">
               <persName>Alençon, Françoise d'</persName>
@@ -3314,12 +3317,20 @@
               <event>
                 <p>Époux de Charles de Bourbon (18 mai 1513), premier duc de Vendôme de 1515 à 1537.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l35">35</ref>
+              </listRef>
             </person>
             <person xml:id="Almedia">
               <persName>Almedia, Ruy Fernandes, d'</persName>
               <event>
                 <p>Ambassadeur résident du roi de Portugal en France de novembre 1536 à décembre 1540.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l50">50</ref>
+                <ref target="#dubourg_correspondance_l86">86</ref>
+                <ref target="#dubourg_correspondance_l87">87</ref>
+              </listRef>
             </person>
             <person xml:id="Annebaut">
               <persName>Annebaut, Claude d'</persName>
@@ -3328,9 +3339,16 @@
               <event>
                 <p>Baron de Retz et seigneur de La Hunaudaye, maréchal de France en 1538. En 1536, il est capitaine général de la cavalerie légère et chef de la garnison de Turin.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l4">4</ref>
+                <ref target="#dubourg_correspondance_l18">18</ref>
+              </listRef>
             </person>
             <person xml:id="Armagnac">
               <persName>Armagnac, Georges d'</persName>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l83">83</ref>
+              </listRef>
             </person>
             <person xml:id="Babou">
               <persName>Babou, Philibert</persName>
@@ -3339,18 +3357,27 @@
               <event>
                 <p>Seigneur de Givray et de La Bourdaisière, trésorier de l'extraordinaire des guerres (1513-1516), contrôleur général (1519) et administrateur général (1524) des finances de Louise de Savoie, trésorier de France en Languedoïl (1521), trésorier de l'Épargne (1523-1525), secrétaire des finances (1530), commis à la surintendance des bâtiments.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l49">49</ref>
+              </listRef>
             </person>
             <person xml:id="Barguin">
               <persName>Barguin, Victor</persName>
               <event>
                 <p>Trésorier de Louise de Savoie, trésorier général des filles de France au moins depuis 1532.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l40">40</ref>
+              </listRef>
             </person>
             <person xml:id="Barthelemy">
               <persName>Barthélemy, Jean</persName>
               <event>
                 <p>Capitaine français non identifié.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l10">10</ref>
+              </listRef>
             </person>
             <person xml:id="Bayard">
               <persName>Bayard, Gilbert</persName>
@@ -3358,6 +3385,9 @@
               <event>
                 <p>Élu du Bas Pays d'Auvergne, puis notaire et secrétaire du roi, secrétaire des finances en 1528 et général des finances en 1529, charge dont il se défait en 1531. Il avait épousé Madeleine Robertet, nièce de Florimond Robertet.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l65">65</ref>
+              </listRef>
             </person>
             <person xml:id="Beaton">
               <persName>Beaton, David</persName>
@@ -3365,6 +3395,9 @@
               <death>1546</death>
               <event>
                 <p>Abbé d'Aberbrothwick, habitué à des missions diplomatiques pour le compte du roi d'Écosse en France depuis 1523, cardinal en 1539.</p></event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l36">36</ref>
+              </listRef>
             </person>
             <person xml:id="Bochetel">
               <persName>Bochetel, Guillaume</persName>
@@ -3372,18 +3405,46 @@
               <event>
                 <p>Notaire et secrétaire du roi (1518-1558). Il reçoit une commission de secrétaire des finances en 1532 et est fait secrétaire d'État en 1547. Il connaît une intense activité diplomatique en 1538-1541 sous la houlette de Montmorency, devenu connétable.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l6">6</ref>
+                <ref target="#dubourg_correspondance_l15">15</ref>
+                <ref target="#dubourg_correspondance_l17">17</ref>
+                <ref target="#dubourg_correspondance_l20">20</ref>
+                <ref target="#dubourg_correspondance_l36">36</ref>
+                <ref target="#dubourg_correspondance_l37">37</ref>
+                <ref target="#dubourg_correspondance_l38">38</ref>
+                <ref target="#dubourg_correspondance_l43">43</ref>
+                <ref target="#dubourg_correspondance_l44">44</ref>
+                <ref target="#dubourg_correspondance_l45">45</ref>
+                <ref target="#dubourg_correspondance_l46">46</ref>
+                <ref target="#dubourg_correspondance_l54">54</ref>
+                <ref target="#dubourg_correspondance_l56">56</ref>
+                <ref target="#dubourg_correspondance_l62">62</ref>
+                <ref target="#dubourg_correspondance_l77">77</ref>
+                <ref target="#dubourg_correspondance_l78">78</ref>
+                <ref target="#dubourg_correspondance_l82">82</ref>
+                <ref target="#dubourg_correspondance_l93">93</ref>
+              </listRef>
             </person>
             <person xml:id="Bochetel-Ravaud">
               <persName>Bochetel, Ravaud</persName>
               <event>
                 <p>Grand archidiacre d’Angers, tuteur de René et Claude de Rohan sous l’autorité de Marguerite de Navarre (par acte du 29 mars 1530).</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l42">42</ref>
+              </listRef>
             </person>
             <person xml:id="Bombelles">
               <persName>Bombelles, Claude de</persName>
               <event>
                 <p>Sieur de Lavau, secrétaire et valet de chambre du roi. Il accomplit plusieurs missions diplomatiques pour François I<hi rend="sup">er</hi>.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l26">26</ref>
+                <ref target="#dubourg_correspondance_l52">52</ref>
+                <ref target="#dubourg_correspondance_l56">56</ref>
+              </listRef>
             </person>
             <person xml:id="Bonner">
               <persName>Bonner, Edmund</persName>
@@ -3392,18 +3453,27 @@
               <event>
                 <p>Évêque d'Heresford (1538) puis de Londres (1539), résident d'Angleterre en France d'août 1538 à février 1540.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l0">0</ref>
+              </listRef>
             </person>
             <person xml:id="Borna">
               <persName>Borna, André</persName>
               <event>
                 <p>Marchand lyonnais</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l37">37</ref>
+              </listRef>
             </person>
             <person xml:id="Bossut">
               <persName>Bossut, Nicolas de</persName>
               <event>
                 <p>Seigneur de Longueval, d’Escry et de Marchais, maître d’hôtel du roi, bailli de Vermandois.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l12">12</ref>
+              </listRef>
             </person>
             <person xml:id="Bourbon">
               <persName>Bourbon-Vendôme, Louis de</persName>
@@ -3412,12 +3482,20 @@
               <event>
                 <p>Cardinal de Bourbon, archevêque de Sens depuis 1535, chargé de missions financières.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l59">59</ref>
+                <ref target="#dubourg_correspondance_l64">64</ref>
+              </listRef>
             </person>
             <person xml:id="Bourgeois">
               <persName>Bourgeois ou Burgensis, Louis</persName>
               <event>
                 <p>Premier médecin du roi depuis 1533 au moins.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l33">33</ref>
+                <ref target="#dubourg_correspondance_l69">69</ref>
+              </listRef>
             </person>
             <person xml:id="Breton">
               <persName>Breton, Jean</persName>
@@ -3426,34 +3504,122 @@
               <event>
                 <p>Seigneur de Villandry et de Villesavin, secrétaire des finances de 1521 à 1542.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l1">1</ref>
+                <ref target="#dubourg_correspondance_l3">3</ref>
+                <ref target="#dubourg_correspondance_l4">4</ref>
+                <ref target="#dubourg_correspondance_l5">5</ref>
+                <ref target="#dubourg_correspondance_l7">7</ref>
+                <ref target="#dubourg_correspondance_l8">8</ref>
+                <ref target="#dubourg_correspondance_l9">9</ref>
+                <ref target="#dubourg_correspondance_l10">10</ref>
+                <ref target="#dubourg_correspondance_l11">11</ref>
+                <ref target="#dubourg_correspondance_l12">12</ref>
+                <ref target="#dubourg_correspondance_l13">13</ref>
+                <ref target="#dubourg_correspondance_l14">14</ref>
+                <ref target="#dubourg_correspondance_l16">16</ref>
+                <ref target="#dubourg_correspondance_l18">18</ref>
+                <ref target="#dubourg_correspondance_l19">19</ref>
+                <ref target="#dubourg_correspondance_l21">21</ref>
+                <ref target="#dubourg_correspondance_l22">22</ref>
+                <ref target="#dubourg_correspondance_l23">23</ref>
+                <ref target="#dubourg_correspondance_l24">24</ref>
+                <ref target="#dubourg_correspondance_l25">25</ref>
+                <ref target="#dubourg_correspondance_l26">26</ref>
+                <ref target="#dubourg_correspondance_l27">27</ref>
+                <ref target="#dubourg_correspondance_l28">28</ref>
+                <ref target="#dubourg_correspondance_l29">29</ref>
+                <ref target="#dubourg_correspondance_l30">30</ref>
+                <ref target="#dubourg_correspondance_l31">31</ref>
+                <ref target="#dubourg_correspondance_l32">32</ref>
+                <ref target="#dubourg_correspondance_l33">33</ref>
+                <ref target="#dubourg_correspondance_l34">34</ref>
+                <ref target="#dubourg_correspondance_l35">35</ref>
+                <ref target="#dubourg_correspondance_l39">39</ref>
+                <ref target="#dubourg_correspondance_l42">42</ref>
+                <ref target="#dubourg_correspondance_l47">47</ref>
+                <ref target="#dubourg_correspondance_l48">48</ref>
+                <ref target="#dubourg_correspondance_l49">49</ref>
+                <ref target="#dubourg_correspondance_l50">50</ref>
+                <ref target="#dubourg_correspondance_l51">51</ref>
+                <ref target="#dubourg_correspondance_l52">52</ref>
+                <ref target="#dubourg_correspondance_l53">53</ref>
+                <ref target="#dubourg_correspondance_l58">58</ref>
+                <ref target="#dubourg_correspondance_l59">59</ref>
+                <ref target="#dubourg_correspondance_l60">60</ref>
+                <ref target="#dubourg_correspondance_l61">61</ref>
+                <ref target="#dubourg_correspondance_l62">62</ref>
+                <ref target="#dubourg_correspondance_l64">64</ref>
+                <ref target="#dubourg_correspondance_l65">65</ref>
+                <ref target="#dubourg_correspondance_l66">66</ref>
+                <ref target="#dubourg_correspondance_l67">67</ref>
+                <ref target="#dubourg_correspondance_l68">68</ref>
+                <ref target="#dubourg_correspondance_l69">69</ref>
+                <ref target="#dubourg_correspondance_l70">70</ref>
+                <ref target="#dubourg_correspondance_l71">71</ref>
+                <ref target="#dubourg_correspondance_l72">72</ref>
+                <ref target="#dubourg_correspondance_l73">73</ref>
+                <ref target="#dubourg_correspondance_l74">74</ref>
+                <ref target="#dubourg_correspondance_l75">75</ref>
+                <ref target="#dubourg_correspondance_l76">76</ref>
+                <ref target="#dubourg_correspondance_l81">81</ref>
+                <ref target="#dubourg_correspondance_l82">82</ref>
+                <ref target="#dubourg_correspondance_l83">83</ref>
+                <ref target="#dubourg_correspondance_l84">84</ref>
+                <ref target="#dubourg_correspondance_l85">85</ref>
+                <ref target="#dubourg_correspondance_l86">86</ref>
+                <ref target="#dubourg_correspondance_l87">87</ref>
+                <ref target="#dubourg_correspondance_l88">88</ref>
+                <ref target="#dubourg_correspondance_l89">89</ref>
+                <ref target="#dubourg_correspondance_l90">90</ref>
+                <ref target="#dubourg_correspondance_l91">91</ref>
+                <ref target="#dubourg_correspondance_l92">92</ref>
+                <ref target="#dubourg_correspondance_l94">94</ref>
+                <ref target="#dubourg_correspondance_l95">95</ref>
+              </listRef>
             </person>
             <person xml:id="Breton-Claude">
               <persName>Breton, Claude</persName>
               <event>
                 <p>Fils de Jean Breton.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l82">82</ref>
+              </listRef>
             </person>
             <person xml:id="Bourrassol">
               <persName>Bourrassol, Jean</persName>
               <event>
                 <p>Greffier civil au parlement de Toulouse, après avoir succédé dans cette charge à son père Guillaume.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l7">7</ref>
+              </listRef>
             </person>
             <person xml:id="Burnet">
               <persName>Burnet, Jean</persName>
               <event>
                 <p>Greffier civil du parlement de Toulouse.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l7">7</ref>
+              </listRef>
             </person>
             <person xml:id="Burgensis">
               <persName>Burgensis, Claude</persName>
               <event>
                 <p>Secrétaire des finances.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l2">2</ref>
+              </listRef>
             </person>
             <person xml:id="Burie">
               <persName>Coucys, Charles de</persName>
               <event><p>Seigneur de Burie, cité en octobre 1536 comme lieutenant général en Piémont et en novembre 1536 comme lieutenant du roi à Turin.</p></event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l4">4</ref>
+              </listRef>
             </person>
             <person xml:id="Caillaud">
               <persName>Caillaud, Louis</persName>
@@ -3461,6 +3627,9 @@
               <event>
                 <p>Conseiller clerc (1532), puis président des Enquêtes au parlement de Paris (2 juin 1538). Il avait été le solliciteur dans divers procès qu'avaient Louise de Savoie (avant 1532) ou le roi (après 1533) et il fut commis (1536) à l'examen des comptes des décimes.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l0">0</ref>
+              </listRef>
             </person>
             <person xml:id="Caix">
               <persName>Caix, Honorat de</persName>
@@ -3468,6 +3637,9 @@
               <event>
                 <p>Gentilhomme de la maison du roi, ambassadeur extraordinaire depuis 1518 puis résident au Portugal (1532-1559). </p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l50">50</ref>
+              </listRef>
             </person>
             <person xml:id="Carpi">
               <persName>Carpi, Rodolfo Pio di</persName>
@@ -3476,12 +3648,18 @@
               <event>
                 <p>Évêque de Faenza en 1528, nonce en France (9 janvier 1535-mai 1537), cardinal le 22 décembre 1536, légat a latere en France (19 décembre 1537-30 avril 1538).</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l51">51</ref>
+              </listRef>
             </person>
             <person xml:id="Cere">
               <persName>Cere d'Orsini, Jean-Paul de</persName>
               <event>
                 <p>Gentilhomme de la chambre, chevalier de l'ordre.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l85">85</ref>
+              </listRef>
             </person>
             <person xml:id="Chabot">
               <persName>Chabot, Charles</persName>
@@ -3490,6 +3668,9 @@
               <event>
                 <p>Baron de Jarnac, gourverneur de La Rochelle. Il s'attribue le mandat de maire perpétuel le 1er avril 1536.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l22">22</ref>
+              </listRef>
             </person>
             <person xml:id="Chabot-Ph">
               <persName>Chabot, Philippe</persName>
@@ -3498,22 +3679,34 @@
               <event>
                 <p>Amiral de France (1526-1540, 1541-1543), nommé au début de 1536 commandant de l’armée qui prend le contrôle de la Bresse, puis de la Savoie et d’une partie du Piémont (février-avril 1536).</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l29">29</ref>
+              </listRef>
             </person>
             <person xml:id="Colonna">
               <persName>Colonna, Cristoforo Colonna</persName>
               <event><p>Capitaine italien non identifié.</p></event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l10">10</ref>
+              </listRef>
             </person>
             <person xml:id="Corbin">
               <persName>Corbin, Nicole</persName>
               <event>
                 <p>Cité comme conseiller au Grand Conseil en 1538 et 1540.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l25">25</ref>
+              </listRef>
             </person>
             <person xml:id="Corsini">
               <persName>Corsini, Raffaelo</persName>
               <event>
                 <p>Correspondant à Lyon de Gaspard Darmel, marchand de Turin.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l83">83</ref>
+              </listRef>
             </person>
             <person xml:id="Crequy">
               <persName>Créquy, Jean de</persName>
@@ -3521,18 +3714,30 @@
               <event>
                 <p>Seigneur de Canaples et de Poix, gentilhomme de la Chambre et capitaine de cent hommes d’armes de la Maison du roi.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l5">5</ref>
+                <ref target="#dubourg_correspondance_l15">15</ref>
+              </listRef>
             </person>
             <person xml:id="Crotto">
               <persName>Crotto, Livio</persName>
               <event>
                 <p>Maître d'hôtel du comte de Saint-Pol, alors attaché à l'ambassade de France à Venise ; il reçut en 1539 des lettres de naturalité en qualité de gouverneur et capitaine de Melun et commissaire ordinaire des guerres.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l62">62</ref>
+              </listRef>
             </person>
             <person xml:id="Daugerant">
               <persName>Augerant, Louis d'</persName>
               <event>
                 <p>Sieur de Boisrigault, chambellan et maître d’hôtel du roi, cessionnaire de la terre d’Usson, ambassadeur en Suisse de mars 1529 à octobre 1535, ambassadeur auprès des Ligues grises de mars à décembre 1537.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l43">43</ref>
+                <ref target="#dubourg_correspondance_l51">51</ref>
+                <ref target="#dubourg_correspondance_l62">62</ref>
+              </listRef>
             </person>
             <person xml:id="Dodieu">
               <persName>Dodieu, Claude</persName>
@@ -3540,6 +3745,9 @@
               <event>
                 <p>Seigneur de Vély, abbé de Saint-Riquier, maître d'hôtel du roi, conseiller au parlement de Bretagne en 1533/1539 et de Paris en 1524, évêque de Rennes en 1539, maître des requêtes en 1540 ; il accomplit de nombreuses missions auprès de Charles Quint.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l75">75</ref>
+              </listRef>
             </person>
             <person xml:id="DuBellay-Guillaume">
               <persName>Du Bellay, Guillaume</persName>
@@ -3548,6 +3756,10 @@
               <event>
                 <p>Seigneur de Langey, employé dans de nombreuses missions diplomatiques sous François Ier et homme de guerre ; il fut en particulier actif durant la guerre de 1536-1537, spécialement en Piémont dont il devint gouverneur en 1539.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l39">39</ref>
+                <ref target="#dubourg_correspondance_l58">58</ref>
+              </listRef>
             </person>
             <person xml:id="DuBellay-Jean">
               <persName>Du Bellay, Jean</persName>
@@ -3556,18 +3768,27 @@
               <event>
                 <p>Évêque de Bayonne (1526) puis de Paris (1532), fait cardinal en le 21 mai 1535.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l54">54</ref>
+              </listRef>
             </person>
             <person xml:id="Dubois">
               <persName>Dubois, Antoine</persName>
               <event>
                 <p>Évêque de Béziers depuis 1490/1497. Il était décédé le 17 avril 1537.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l77">77</ref>
+              </listRef>
             </person>
             <person xml:id="Dubois-Charles">
               <persName>Dubois, Charles</persName>
               <event>
                 <p>Seigneur d'Esquerdes, capitaine de 40 lances. Il est avec son troisième frère, Bernard, passé dans le camp de Charles Quint.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l77">77</ref>
+              </listRef>
             </person>
             <person xml:id="Egmont">
               <persName>Egmont, Charles d'</persName>
@@ -3576,12 +3797,18 @@
               <event>
                 <p>Duc de Gueldre (1492-1538) ; il prit possession de l’héritage de son père Adolphe d’Egmont (1438-1477) à sa libération par les Français en 1492.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l51">51</ref>
+              </listRef>
             </person>
             <person xml:id="Essarts">
               <persName>Esarts, Jean des</persName>
               <event>
                 <p>Baron d'Aulnay (Aulnay-sur-Odon, Calvadas, arr. Vire, ch.-l. de cant.).</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l66">66</ref>
+              </listRef>
             </person>
             <person xml:id="Este">
               <persName>Este, Ippolito d'</persName>
@@ -3590,15 +3817,24 @@
               <event>
                 <p>Cardinal en 1538 (connu dès lors sous le nom de cardinal de Ferrare), titulaire de plusieurs évêchés et archevêchés, dont Milan en tant qu'administrateur depuis 1519.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l67">67</ref>
+              </listRef>
             </person>
             <person xml:id="Estourmel">
               <persName>Estourmel, Jean d'</persName>
               <event><p>Commissaire des guerres, maître d’hôtel du roi, général d’Outre-Seine-et-Yonne (1541-avant avril 1557).</p></event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l32">32</ref>
+              </listRef>
             </person>
             <person xml:id="Foix">
               <persName>Foix, Jean de</persName>
               <death>15**</death>
               <event><p>Comte de Caraman ou Carmaing. Père de Paul de Foix (1528-1584), ambassadeur à Londres puis à Venise sous Charles IX.</p></event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l53">53</ref>
+              </listRef>
             </person>
             <person xml:id="Furstenberg">
               <persName>Fürstenberg, Guillaume de</persName>
@@ -3607,26 +3843,41 @@
               <event>
                 <p>Entré au service de la France en 1521 avant de trahir aussitôt, puis de revenir en 1534 et de trahir une seconde fois en 1544.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l95">95</ref>
+              </listRef>
             </person>
             <person xml:id="Gaudiniere">
               <persName>Gaudinière (ou Godinières), sieur de</persName>
               <event><p>Mentionné comme capitaine à la tête de 300 hommes dans l’« État des dépenses de la campagne de Piémont pour le quartier d’octobre à décembre 1537 » (Bibl. nat. Fr., fr. 3058, fol 35-74, éd. Ferdinand Lot, <title>Recherches sur les effectifs des armées françaises, des guerres d'Italie aux guerres de religion : 1494-1562</title>, Paris, 1962, pièce justificative n° IV, p. 218). Il reçoit auparavant un don de 600 livres le 24 mai 1537 (<title>Catalogue des actes de François I<hi rend="sup">er</hi></title>, t. III, p. 327, n° 9026).</p></event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l11">11</ref>
+              </listRef>
             </person>
             <person xml:id="Geis">
               <persName>Geis (Geys ou Gez), Guillaume de</persName>
               <event><p>Valet de chambre du roi et du dauphin, grenetier de Marcilly.</p></event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l70">70</ref>
+              </listRef>
             </person>
             <person xml:id="Gimbre">
               <persName>Gimbre, Henri</persName>
               <event>
                 <p>Marchand lyonnais.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l37">37</ref>
+              </listRef>
             </person>
             <person xml:id="Girard">
               <persName>Girard, Jean</persName>
               <event>
                 <p>Commis d'Ambroise Lemoine, contrôleur général de l'artillerie.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l23">23</ref>
+              </listRef>
             </person>
             <person xml:id="Gonzaga">
               <persName>Gonzaga, Ippolito</persName>
@@ -3634,6 +3885,9 @@
               <event>
                 <p>Capitaine italien pensionné par François Ier depuis 1531, commandant de La Mirandola depuis 1534.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l10">10</ref>
+              </listRef>
             </person>
             <person xml:id="Granvelle">
               <persName>Perrenot de Granvelle, Nicolas</persName>
@@ -3642,12 +3896,20 @@
               <event>
                 <p>Franc-Comtois, garde des sceaux de Charles Quint en 1532.</p>
               </event> 
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l91">91</ref>
+              </listRef>
             </person>
             <person xml:id="Grimaldi">
               <persName>Grimaldi, Octavien</persName>
               <event>
                 <p>Natif de Gênes, général des finances, vice-président de la chambre des comptes de Paris (1526-1542).</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l8">8</ref>
+                <ref target="#dubourg_correspondance_l14">14</ref>
+                <ref target="#dubourg_correspondance_l16">16</ref>
+              </listRef>
             </person>
             <person xml:id="Guiffrey">
               <persName>Guiffrey, Guiges</persName>
@@ -3656,12 +3918,19 @@
               <event>
                 <p>Sieur de Boutières, homme de guerre, nommé gouverneur de Turin en 1537.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l39">39</ref>
+              </listRef>
             </person>
             <person xml:id="Hannaert">
               <persName>Hannaert, Jean</persName>
               <event>
                 <p>Vicomte de Lombeke et baron de Liedekerke, résident de l'empereur auprès de François Ier de janvier 1532 à juin 1536.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l89">89</ref>
+                <ref target="#dubourg_correspondance_l90">90</ref>
+              </listRef>
             </person>
             <person xml:id="Humieres">
               <persName>Humières, Jean d'</persName>
@@ -3670,6 +3939,15 @@
               <event>
                 <p>Gouverneur du dauphin François en 1530, cité en mars 1536 comme lieutenant général en Piémont (jusqu’en novembre 1537), Savoie et au marquisat de Saluces.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l5">5</ref>
+                <ref target="#dubourg_correspondance_l10">10</ref>
+                <ref target="#dubourg_correspondance_l30">30</ref>
+                <ref target="#dubourg_correspondance_l31">31</ref>
+                <ref target="#dubourg_correspondance_l50">50</ref>
+                <ref target="#dubourg_correspondance_l62">62</ref>
+                <ref target="#dubourg_correspondance_l70">70</ref>
+              </listRef>
             </person>
             <person xml:id="JeanIII">
               <persName>Jean III le Pieux</persName>
@@ -3678,12 +3956,19 @@
               <event>
                 <p>Roi de Portugal de 1521 à 1557.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l86">86</ref>
+                <ref target="#dubourg_correspondance_l87">87</ref>
+              </listRef>
             </person>
             <person xml:id="Karuel">
               <persName>Karuel, Guy</persName>
               <event>
                 <p>Sieur de Boran, gentilhomme de la maison du roi, commissaire ordinaire des guerres.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l60">60</ref>
+              </listRef>
             </person>
             <person xml:id="LaChatre">
               <persName>La Châtre, Joachim de</persName>
@@ -3691,6 +3976,9 @@
               <event>
                 <p>Seigneur de Nançay, capitaine des gardes françaises et chambellan depuis 1529.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l73">73</ref>
+              </listRef>
             </person>
             <person xml:id="LaForest">
               <persName>La Forest, Jean de</persName>
@@ -3699,12 +3987,19 @@
               <event>
                 <p>Notaire et secrétaire du roi envoyé comme ambassadeur dans l’Empire ottoman en janvier 1535. Il a permis en février 1536 la conclusion du premier traité officiel de paix et d’alliance (les capitulations) entre François I<hi rend="sup">er</hi> et Soliman I<hi rend="sup">er</hi>.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l14">14</ref>
+              </listRef>
             </person>
             <person xml:id="Laguette">
               <persName>Laguette, Jean</persName>
               <event>
                 <p>Commis de l'extraordinaire des guerres en 1528, trésorier des finances et parties casuelles en 1531, puis suspendu et rétabli après le 9 septembre 1537 ; il resta dès lors en fonction au moins jusqu'en novembre 1549.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l75">75</ref>
+                <ref target="#dubourg_correspondance_l78">78</ref>
+              </listRef>
             </person>
             <person xml:id="LaPalu">
               <persName>La Palu, Jean de</persName>
@@ -3712,6 +4007,9 @@
               <event>
                 <p>Comte de Varax en Bresse pour lequel il prête hommage au roi de France en 1535.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l79">79</ref>
+              </listRef>
             </person>
             <person xml:id="Lascaris">
               <persName>Lascaris de Tende, Antoine</persName>
@@ -3719,12 +4017,19 @@
               <event>
                 <p>Évêque de Riez en 1532.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l88">88</ref>
+              </listRef>
             </person>
             <person xml:id="Laseigne">
               <persName>Laseigne, Louis de</persName>
               <event>
                 <p>Gentilhomme de la Vénerie.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l80">80</ref>
+                <ref target="#dubourg_correspondance_l81">81</ref>
+              </listRef>
             </person>
             <person xml:id="Laval">
               <persName>Laval, Jean de</persName>
@@ -3733,30 +4038,46 @@
               <event>
                 <p>Seigneur de Châteaubriant, chevalier de l’ordre du roi, nommé gouverneur de Bretagne en 1531.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l11">11</ref>
+                <ref target="#dubourg_correspondance_l18">18</ref>
+              </listRef>
             </person>
             <person xml:id="LeBigot">
               <persName>Le Bigot, Pierre, dit Le Pin</persName>
               <event>
                 <p>Gentilhomme de la vénerie du roi et commissaire pour la réformation des forêts d’Anjou et du Maine.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l20">20</ref>
+              </listRef>
             </person>
             <person xml:id="Lech">
               <persName>Lech ou Luc, Georges</persName>
               <event>
                 <p>Comte de Glic ou Glick, gentilhomme danois.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l17">17</ref>
+              </listRef>
             </person>
             <person xml:id="Lemoyne">
               <persName>Lemoyne, Ambroise</persName>
               <event>
                 <p>Contrôleur général de l’artillerie à partir de 1526.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l23">23</ref>
+              </listRef>
             </person>
             <person xml:id="Lordat">
               <persName>Lordat, Bertrand de</persName>
               <event>
                 <p>Évêque de Pamiers depuis 1524 ; il résigna en 1547. Il était accusé, entre autres choses, d'intelligence avec l'Espagne.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l92">92</ref>
+              </listRef>
             </person>
             <person xml:id="LosCobos">
               <persName>Los Cobos y Molina, Francisco de</persName>
@@ -3765,6 +4086,9 @@
               <event>
                 <p>Secrétaire d'État de Charles Quint et comendador du royaume de Castille.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l91">91</ref>
+              </listRef>
             </person>
             <person xml:id="Lugny">
               <persName>Lugny, Jean de</persName>
@@ -3772,22 +4096,35 @@
               <event>
                 <p>Seigneur de Ruffey et de Branges, chambellan du roi, bailli et maître des foires de Chalon.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l79">79</ref>
+              </listRef>
             </person>
             <person xml:id="LaGarde">
               <persName>La Garde, Pierre de</persName>
               <event>
                 <p>Seigneur de Saignes, conseiller au parlement de Toulouse de 1529 à 1544.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l92">92</ref>
+              </listRef>
             </person>
             <person xml:id="LeTirant">
               <persName>Le Tirant, Philippe</persName>
               <event>
                 <p>Receveur ordinaire et vicomte d’Orbec (nommé en février 1521 – mai 1537), receveur des finances extraordinaires et parties casuelles (nommé le 21 mai 1527), commis à la recette générale d’Outre-Seine et Yonne (1538-1542).</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l45">45</ref>
+                <ref target="#dubourg_correspondance_l51">51</ref>
+              </listRef>
             </person>
             <person xml:id="Longuejoue">
               <persName>Longuejoue, Matthieu de</persName>
               <event><p>Évêque de Soissons (1534-1557).</p></event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l19">19</ref>
+              </listRef>
             </person>
             <person xml:id="Lorraine-Jean">
               <persName>Lorraine, Jean de</persName>
@@ -3796,6 +4133,10 @@
               <event>
                 <p>Évêque et archevêque de plusieurs sièges, cardinal depuis 1518.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l67">67</ref>
+                <ref target="#dubourg_correspondance_l91">91</ref>
+              </listRef>
             </person>
             <person xml:id="Marillac">
               <persName>Marillac, Charles de</persName>
@@ -3804,12 +4145,19 @@
               <event>
                 <p>Avocat au parlement de Paris, il accompagne son cousin Jean de La Forest à Constantinople. Il revient en France faire confirmer le traité de février 1536 et repart rapidement pour l’Empire ottoman muni de la présente lettre.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l14">14</ref>
+                <ref target="#dubourg_correspondance_l16">16</ref>
+              </listRef>
             </person>
             <person xml:id="Millet">
               <persName>Guilaume, Millet</persName>
               <event>
                 <p>Médecin du roi au moins depuis 1530, titulaire d'un office d'élu à Angers.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l78">78</ref>
+              </listRef>
             </person>
             <person xml:id="Mirandole">
               <persName>Pico de Mirandola, Galeotto</persName>
@@ -3818,6 +4166,9 @@
               <event>
                 <p>Réfugié en France après avoir assassiné en 1533 son oncle Giovanni Francesco Pico comte de Mirandola.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l57">57</ref>
+              </listRef>
             </person>
             <person xml:id="Montchenu">
               <persName>Montchenu, Marin de</persName>
@@ -3825,6 +4176,9 @@
               <event>
                 <p>Seigneur de Chaumont et de Guercheville, premier maître d’hôtel du roi, sénéchal et gouverneur du Limousin, bailli de Viennois, commandant pour le roi dans les provinces de Lyonnais, Forez et Beaujolais.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l10">10</ref>
+              </listRef>
             </person>
             <person xml:id="Montmorency">
               <persName>Montmorency, Anne de</persName>
@@ -3833,18 +4187,37 @@
               <event>
                 <p>Grand maître de France (1526-1558) et connétable en 1538.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l3">3</ref>
+                <ref target="#dubourg_correspondance_l8">8</ref>
+                <ref target="#dubourg_correspondance_l13">13</ref>
+                <ref target="#dubourg_correspondance_l16">16</ref>
+                <ref target="#dubourg_correspondance_l18">18</ref>
+                <ref target="#dubourg_correspondance_l31">31</ref>
+                <ref target="#dubourg_correspondance_l43">43</ref>
+                <ref target="#dubourg_correspondance_l68">68</ref>
+                <ref target="#dubourg_correspondance_l77">77</ref>
+                <ref target="#dubourg_correspondance_l91">91</ref>
+                <ref target="#dubourg_correspondance_l95">95</ref>
+              </listRef>
             </person>
             <person xml:id="Montmorency-Francois">
               <persName>Montmorency, François de</persName>
               <event>
                 <p>Seigneur de La Rochepot, chevalier de l'ordre, gentilhomme de la chambre, gouverneur de Picardie (mai 1537-août 1538).</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l89">89</ref>
+              </listRef>
             </person>
             <person xml:id="Morin">
               <persName>Morin, Jean</persName>
               <event>
                 <p>Lieutenant criminel au Châtelet de Paris depuis le 28 décembre 1529 (et jusqu'au 30 mai 1544), il cumule cet office avec celui de lieutenant général au bailliage.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l0">0</ref>
+              </listRef>
             </person>
             <person xml:id="Navarre-Marguerite">
               <persName>Navarre, Marguerite de</persName>
@@ -3853,6 +4226,9 @@
               <event>
                 <p>Soeur de François I<hi rend="sup">er</hi>, épouse en 1527 d'Henri II d'Albret, roi de Navarre.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l38">38</ref>
+              </listRef>
             </person>
             <person xml:id="Neufville">
               <persName>Neufville, Nicolas II de</persName>
@@ -3860,16 +4236,28 @@
               <event>
                 <p>Seigneur de Villeroy, trésorier des guerres de Milan sous Louis XII, secrétaire des finances du roi en 1515, audiencier de la Grande Chancellerie en 1516, trésorier de France d'Outre-Seine et Yonne en 1525 ; il reçoit de nombreuses commissions liées aux finances et aux bâtiments royaux.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l19">19</ref>
+                <ref target="#dubourg_correspondance_l51">51</ref>
+                <ref target="#dubourg_correspondance_l71">71</ref>
+              </listRef>
             </person>
             <person xml:id="Orleans">
               <persName>Orléans, François d'</persName>
               <event><p>Marquis de Rothelin ou Roetteln, prince de Châtelaillon, concessionnaire du grenier à sel de Montereau-Fault-Yonne, époux de Jacqueline de Rohan.</p></event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l6">6</ref>
+              </listRef>
             </person>
             <person xml:id="Orleans-Henri">
               <persName>Orléans, Henri d'</persName>
               <event>
                 <p>Dauphin depuis 1536, le futur Henri II.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l73">73</ref>
+                <ref target="#dubourg_correspondance_l76">76</ref>
+              </listRef>
             </person>
             <person xml:id="Orsoni">
               <persName>Pardo de' Orsini, Camillo</persName>
@@ -3882,12 +4270,19 @@
               <event>
                 <p>Trésorier et receveur général des finances de Bretagne (1524-1528), puis président de la chambre des comptes de Bretagne (1528-1537). </p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l41">41</ref>
+              </listRef>
             </person>
             <person xml:id="Passano">
               <persName>Passano, Jean Joachim de</persName>
               <event>
                 <p>Seigneur de Vaux, maître des requêtes ordinaire de l’Hôtel (1524-1533), maître d'hôtel du roi depuis 1535, envoyé et résident en Angleterre entre 1525 et 1532 et en Italie (Ferrare, Venise) entre 1525 et 1539, cité comme créancier du roi en 1532.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l13">13</ref>
+                <ref target="#dubourg_correspondance_l16">16</ref>
+              </listRef>
             </person>
             <person xml:id="PaulIII">
               <persName>Farnese, Alessandro</persName>
@@ -3896,30 +4291,45 @@
               <event>
                 <p>Pape sous le nom de Paul III (1534-1549).</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l43">43</ref>
+              </listRef>
             </person>
             <person xml:id="Pescheray">
               <persName>Pescheray, Marin de</persName>
               <event>
                 <p>Commissaire des guerres.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l94">94</ref>
+              </listRef>
             </person>
             <person xml:id="Picart">
               <persName>Picart (Picard ou Le Picard), Nicolas</persName>
               <event>
                 <p>Receveur de Carentan, commis au payement des bâtiments de Fontainebleau, Boulogne et Villers-Côtterets.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l63">63</ref>
+              </listRef>
             </person>
             <person xml:id="Piombino">
               <persName>Piombino, Niccolò di</persName>
               <event>
                 <p>Capitaine italien au service de la France pensionné pour 300 £ par an.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l83">83</ref>
+              </listRef>
             </person>
             <person xml:id="Plantevit">
               <persName>Plantevit, Pierre</persName>
               <event>
                 <p>Commis à tenir le compte des décimes de Languedoc, receveur de Béziers.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l77">77</ref>
+              </listRef>
             </person>
             <person xml:id="Pommeraye">
               <persName>La Pommeraye, Gilles de</persName>
@@ -3927,12 +4337,18 @@
               <event>
                 <p>Maître d'hôtel ordinaire du roi, président de la chambre des comptes de Bretagne par résignation de Jean Parajau (reçu le 22 juin 1537).</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l41">41</ref>
+              </listRef>
             </person>
             <person xml:id="Poyet">
               <persName>Poyet, Guillaume</persName>
               <birth>v. 1473</birth>
               <death>1548</death>
               <event><p>Président au parlement de Paris en 1535, fait chancelier de France le 12 novembre 1538.</p></event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l18">18</ref>
+              </listRef>
             </person>
             <person xml:id="Preudhomme">
               <persName>Preudhomme, Guillaume</persName>
@@ -3940,12 +4356,19 @@
               <event>
                 <p>Général des finances de Normandie (1524-1542).</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l16">16</ref>
+                <ref target="#dubourg_correspondance_l95">95</ref>
+              </listRef>
             </person>
             <person xml:id="Raconis">
               <persName>Raconis, Jean de</persName>
               <event>
                 <p>Commissaire de l'artillerie.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l45">45</ref>
+              </listRef>
             </person>
             <person xml:id="Rangoni">
               <persName>Rangoni, Guido</persName>
@@ -3953,24 +4376,37 @@
               <event>
                 <p>Chevalier de l'ordre, capitaine italien originaire de Modène ; il reçoit des lettres de naturalité le 7 octobre 1538.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l83">83</ref>
+              </listRef>
             </person>
             <person xml:id="Regnault">
               <persName>Regnault, François</persName>
               <event>
                 <p>Omprimeur parisien actif de 1500 à 1541. Il avait séjourné à Londres dès 1496, peut-être compagnon d'un libraire de cette ville et conserva des liens étroits avec l'Angleterre, imprimant dès 1526 le Bréviaire d'York ou les Heures à l'usage de Salisbury : André Jaulme, « Étude sur François Regnault, libraire et imprimeur à Paris, 1500-1541, suivie d'un catalogue de ses éditions », thèse inédite de l'École nationale des chartes, résumée dans <title>Positions des thèses...</title>, Paris, 1924, p. 95-103.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l0">0</ref>
+              </listRef>
             </person>
             <person xml:id="Rennes-Anne">
               <persName>Rennes, Anne ou René de, dit Michelet</persName>
               <event>
                 <p>Premier huissier de la chambre au moins depuis 1528 et sommelier du roi, garde de la gabelle en l'île de Bouin.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l55">55</ref>
+              </listRef>
             </person>
             <person xml:id="Ricci">
               <persName>Ricci, Emanuele</persName>
               <event>
                 <p>Marchand génois actif à Anvers.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l64">64</ref>
+                <ref target="#dubourg_correspondance_l74">74</ref>
+              </listRef>
             </person>
             <person xml:id="Rochechouart">
               <persName>Rochechouar, Antoine de</persName>
@@ -3978,6 +4414,10 @@
               <event>
                 <p>Sénéchal de Toulouse en 1516/1522, lieutenant général en Languedoc en 1536 ; il meurt de ses blessures reçues à la bataille de Cerisoles en 1544.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l77">77</ref>
+                <ref target="#dubourg_correspondance_l91">91</ref>
+              </listRef>
             </person>
             <person xml:id="Rohan-Jacqueline">
               <persName>Rohan, Jacqueline de</persName>
@@ -3986,6 +4426,9 @@
               <event>
                 <p>Marquise de Rothelin, demoiselle d'honneur de la reine Éléonore, organisatrice du refuge huguenot en Brie après 1548.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l34">34</ref>
+              </listRef>
             </person>
             <person xml:id="Roillard">
               <persName>Roillard, Antoine</persName>
@@ -3993,6 +4436,9 @@
               <event>
                 <p>Conseiller lai au parlement de Paris (1536-1537), puis conseiller clerc (1539) par permutation avec son père Louis († 1541), lui-même conseiller lai depuis 1518.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l38">38</ref>
+              </listRef>
             </person>
             <person xml:id="Roussy">
               <persName>Roussy, Antoine II, comte de</persName>
@@ -4000,10 +4446,16 @@
               <event>
                 <p>Comte de Brienne et de Ligny, de la maison de Luxembourg.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l1">1</ref>
+              </listRef>
             </person>
             <person xml:id="Ruffin">
               <persName>Ruffin, Antoine, dit Pothon ou Poton</persName>
               <event><p>Seigneur de Puycalvary, sénéchal d'Agenais et de Gascogne.</p></event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l73">73</ref>
+              </listRef>
             </person>
             <person xml:id="Saluces-JL">
               <persName>Saluces, Jean-Louis, marquis de</persName>
@@ -4017,6 +4469,9 @@
               <event>
                 <p>Conseiller (1503) au parlement de Paris.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l38">38</ref>
+              </listRef>
             </person>
             <person xml:id="Segiuer-Pierre">
               <persName>Séguier, Pierre I<hi rend="sup">er</hi></persName>
@@ -4031,24 +4486,36 @@
               <event>
                 <p>Roi d'Écosse (1513-1542).</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l36">36</ref>
+              </listRef>
             </person>
             <person xml:id="Stuart-Robert">
               <persName>Stuart,Robert</persName>
               <event>
                 <p>Comte de Beaumont-le-Roger, seigneur d'Aubigny (1470-1544), maréchal de France depuis 1514.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l72">72</ref>
+              </listRef>
             </person>
             <person xml:id="Tanneguy">
               <persName>Tanneguy, Étienne</persName>
               <event>
                 <p>Commissaire et fondeur de l'artillerie</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l68">68</ref>
+              </listRef>
             </person>
             <person xml:id="Tarcon">
               <persName>Tarcon ou Tarchon, Pompée [Pompeo Tarconi]</persName>
               <event>
                 <p>Lapidaire, joaillier, graveur sur pierres fines.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l9">9</ref>
+              </listRef>
             </person>
             <person xml:id="Tournon">
               <persName>Tournon, François de</persName>
@@ -4057,6 +4524,21 @@
               <event>
                 <p>Cardinal en 1530, commis en 1536 pour tenir le Conseil privé à Lyon en l’absence du roi.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l5">5</ref>
+                <ref target="#dubourg_correspondance_l11">11</ref>
+                <ref target="#dubourg_correspondance_l18">18</ref>
+                <ref target="#dubourg_correspondance_l26">26</ref>
+                <ref target="#dubourg_correspondance_l27">27</ref>
+                <ref target="#dubourg_correspondance_l28">28</ref>
+                <ref target="#dubourg_correspondance_l30">30</ref>
+                <ref target="#dubourg_correspondance_l31">31</ref>
+                <ref target="#dubourg_correspondance_l37">37</ref>
+                <ref target="#dubourg_correspondance_l48">48</ref>
+                <ref target="#dubourg_correspondance_l50">50</ref>
+                <ref target="#dubourg_correspondance_l60">60</ref>
+                <ref target="#dubourg_correspondance_l62">62</ref>
+              </listRef>
             </person>
             <person xml:id="Valois-Madeleine">
               <persName>Valois, Madeleine de</persName>
@@ -4065,18 +4547,28 @@
               <event>
                 <p>Fille de François I<hi rend="sup">er</hi>; elle épousa en janvier 1537 de Jacques V (1512-1542), roi d'Écosse (1513-1542) et mourut six mois plus tard, en juillet 1537.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l40">40</ref>
+              </listRef>
             </person>
             <person xml:id="Verrier">
               <persName>Verrier ou Le Verrier, Jean, dit de Nîmes</persName>
               <event>
                 <p>Sieur de Villemartin, valet de chambre et premier chirurgien du roi depuis 1531 au moins.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l33">33</ref>
+              </listRef>
             </person>
             <person xml:id="Vion">
               <persName>Vion, Jean</persName>
               <event>
                 <p>Commis à l’extraordinaire de l’artillerie. Ces mandements sont analysés dans le <title>Catalogue des actes de François I<hi rend="sup">er</hi></title>, t. 8, p. 143, n° 30614.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l37">37</ref>
+                <ref target="#dubourg_correspondance_l45">45</ref>
+              </listRef>
             </person>
             <person xml:id="Wurtemberg">
               <persName>Würtemberg, Ulrich VI de</persName>
@@ -4085,6 +4577,9 @@
               <event>
                 <p>Protestant, au service de la France.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l95">95</ref>
+              </listRef>
             </person>
           </listPerson></div>
         <div subtype="split" xml:id="dubourg_correspondance_idx_place">
@@ -4097,15 +4592,24 @@
                 <district type="arrondissement">Créteil</district>
                 <district type="canton">Villeneuve-le-Roi</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l63">63</ref>
+              </listRef>
             </place>
             <place xml:id="Amiens">
               <placeName>Amiens</placeName>
               <location>
                 <district type="departement">Somme, ch.-l. de dép.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l34">34</ref>
+              </listRef>
             </place>
             <place xml:id="Anjou">
               <placeName>Anjou</placeName>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l20">20</ref>
+              </listRef>
             </place>
             <place xml:id="Arles">
               <placeName>Arles</placeName>
@@ -4113,18 +4617,30 @@
                 <district type="departement">Bouches-du-Rhône</district>
                 <district type="arrondissement">ch.-l. d'arr.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l27">27</ref>
+              </listRef>
             </place>
             <place xml:id="Arras">
               <placeName>Arras</placeName>
               <location>
                 <district type="departement">Pas-de-Calais, ch.-l. de dép.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l80">80</ref>
+                <ref target="#dubourg_correspondance_l81">81</ref>
+              </listRef>
             </place>
             <place xml:id="Avignon">
               <placeName>Avignon</placeName>
               <location>
                 <district type="departement">Vaucluse</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l27">27</ref>
+                <ref target="#dubourg_correspondance_l28">28</ref>
+                <ref target="#dubourg_correspondance_l29">29</ref>
+              </listRef>
             </place>
             <place xml:id="Bayonne">
               <placeName>Bayonne</placeName>
@@ -4132,15 +4648,26 @@
                 <district type="departement">Pyrénées-Atlantiques</district>
                 <district type="arrondissement">ch.-l. d'arr</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l22">22</ref>
+              </listRef>
             </place>
             <place xml:id="Bern-canton">
               <placeName>Bern (canton de)</placeName>
               <location>
                 <country>Suisse</country>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l12">12</ref>
+                <ref target="#dubourg_correspondance_l43">43</ref>
+                <ref target="#dubourg_correspondance_l48">48</ref>
+              </listRef>
             </place>
             <place xml:id="Bordeaux-parlement">
               <placeName>Bordeaux (parlement de)</placeName>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l53">53</ref>
+              </listRef>
             </place>
             <place xml:id="BourgdOisans">
               <placeName>Le Bourg d’Oisans</placeName>
@@ -4149,15 +4676,24 @@
                 <district type="arrondissement">Grenoble</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l5">5</ref>
+              </listRef>
             </place>
             <place xml:id="BourgenBresse">
               <placeName>Bourg-en-Bresse</placeName>
               <location>
                 <district type="departement">Ain, ch.-l. de dép.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l10">10</ref>
+              </listRef>
             </place>
             <place xml:id="Bretagne">
               <placeName>Bretagne</placeName>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l87">87</ref>
+              </listRef>
             </place>
             <place xml:id="Briancon">
               <placeName>Briançon</placeName>
@@ -4165,6 +4701,12 @@
                 <district type="departement">Hautes-Alpes</district>
                 <district type="arrondissement">ch.-l. d'arr.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l81">81</ref>
+                <ref target="#dubourg_correspondance_l82">82</ref>
+                <ref target="#dubourg_correspondance_l83">83</ref>
+                <ref target="#dubourg_correspondance_l91">91</ref>
+              </listRef>
             </place>
             <place xml:id="Carignano">
               <placeName>Carignano</placeName>
@@ -4173,6 +4715,14 @@
                 <district type="region">Piémont</district>
                 <district type="province">Turin</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l85">85</ref>
+                <ref target="#dubourg_correspondance_l86">86</ref>
+                <ref target="#dubourg_correspondance_l87">87</ref>
+                <ref target="#dubourg_correspondance_l88">88</ref>
+                <ref target="#dubourg_correspondance_l89">89</ref>
+                <ref target="#dubourg_correspondance_l90">90</ref>
+              </listRef>
             </place>
             <place xml:id="Cesana">
               <placeName>Cesana Torinese</placeName>
@@ -4181,6 +4731,9 @@
                 <district type="region">Piémont</district>
                 <district type="province">Turin</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l84">84</ref>
+              </listRef>
             </place>
             <place xml:id="Chambery">
               <placeName>Chambéry</placeName>
@@ -4188,9 +4741,16 @@
                 <district type="departement">Savoie</district>
                 <district type="arrondissement">ch.-l. d'arr.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l28">28</ref>
+              </listRef>
             </place>
             <place xml:id="Champagne">
               <placeName>Champagne</placeName>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l45">45</ref>
+                <ref target="#dubourg_correspondance_l65">65</ref>
+              </listRef>
             </place>
             <place xml:id="Chailly">
               <placeName>Chailly-en-Bière</placeName>
@@ -4199,6 +4759,9 @@
                 <district type="arrondissement">Melun</district>
                 <district type="canton">Perthes</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l62">62</ref>
+              </listRef>
             </place>
             <place xml:id="ChateauThierry">
               <placeName>Château-Thierry</placeName>
@@ -4206,6 +4769,9 @@
                 <district type="departement">Aisne</district>
                 <district type="arrondissement">ch.-l. arr.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l57">57</ref>
+              </listRef>
             </place>
             <place xml:id="ChatillonColigny">
               <placeName>Châtillon-Coligny</placeName>
@@ -4215,6 +4781,9 @@
                 <district type="canton">ch.-l. de cant.</district>
               </location>
               <event><p>jusqu'en 1896 Châtillon-sur-Loing</p></event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l75">75</ref>
+              </listRef>
             </place>
             <place xml:id="Chevagnes">
               <placeName>Chevagnes</placeName>
@@ -4223,6 +4792,9 @@
                 <district type="arrondissement">Moulins</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l76">76</ref>
+              </listRef>
             </place>
             <place xml:id="Chinon">
               <placeName>Chinon</placeName>
@@ -4230,15 +4802,24 @@
                 <district type="departement">Indre-et-Loire</district>
                 <district type="arrondissement">ch.-l. d'arr.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l69">69</ref>
+              </listRef>
             </place>
             <place xml:id="Constantinople">
               <placeName>Constantinople</placeName><!-- Quelle entrée? Constantinople ou Istanbul? -->
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l14">14</ref>
+              </listRef>
             </place>
             <place xml:id="Dijon">
               <placeName>Dijon</placeName>
               <location>
                 <district type="departement">Côte-d'Or, ch.-l. de dép.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l29">29</ref>
+              </listRef>
             </place>
             <place xml:id="Embrun">
               <placeName>Embrun</placeName>
@@ -4247,6 +4828,11 @@
                 <district type="arrondissement">Gap</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l5">5</ref>
+                <ref target="#dubourg_correspondance_l11">11</ref>
+                <ref target="#dubourg_correspondance_l93">93</ref>
+              </listRef>
             </place>
             <place xml:id="Fontainebleau">
               <placeName>Fontainebleau</placeName>
@@ -4254,18 +4840,31 @@
                 <district type="departement">Seine-et-Marne</district>
                 <district type="arrondissement">ch.-l. d'arr.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l58">58</ref>
+                <ref target="#dubourg_correspondance_l59">59</ref>
+                <ref target="#dubourg_correspondance_l60">60</ref>
+                <ref target="#dubourg_correspondance_l61">61</ref>
+              </listRef>
             </place>
             <place xml:id="Gap">
               <placeName>Gap</placeName>
               <location>
                 <district type="departement">Hautes-Alpes, ch.-l. de dép.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l95">95</ref>
+              </listRef>
             </place>
             <place xml:id="Grisons">
               <placeName>Grisons (canton des)</placeName>
               <location>
                 <country>Suisse</country>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l43">43</ref>
+                <ref target="#dubourg_correspondance_l48">48</ref>
+              </listRef>
             </place>
             <place xml:id="Guillestre">
               <placeName>Guillestre</placeName>
@@ -4274,6 +4873,9 @@
                 <district type="arrondissement">Briançon</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l92">92</ref>
+              </listRef>
             </place>
             <place xml:id="Hedin">
               <placeName>Vieil-Hesdin</placeName>
@@ -4285,6 +4887,22 @@
               <event>
                 <p>François I<hi rend="sup">er</hi> y arrive le 19 mars, assiste à la prise de la ville le 20 et y reste jusqu'au 29 mars. La ville fut rasée en 1553 sur ordre de  Charles Quint qui fit reconstruire la cité 6 km plus loin, l'actuelle ville de Hesdin.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l30">30</ref>
+                <ref target="#dubourg_correspondance_l31">31</ref>
+                <ref target="#dubourg_correspondance_l32">32</ref>
+                <ref target="#dubourg_correspondance_l33">33</ref>
+                <ref target="#dubourg_correspondance_l34">34</ref>
+                <ref target="#dubourg_correspondance_l35">35</ref>
+                <ref target="#dubourg_correspondance_l36">36</ref>
+                <ref target="#dubourg_correspondance_l37">37</ref>
+                <ref target="#dubourg_correspondance_l38">38</ref>
+                <ref target="#dubourg_correspondance_l39">39</ref>
+                <ref target="#dubourg_correspondance_l40">40</ref>
+                <ref target="#dubourg_correspondance_l41">41</ref>
+                <ref target="#dubourg_correspondance_l49">49</ref>
+                <ref target="#dubourg_correspondance_l56">56</ref>
+              </listRef>
             </place>
             <place xml:id="Ingrandes">
               <placeName>Ingrandes</placeName>
@@ -4293,6 +4911,9 @@
                 <district type="arrondissement">Angers</district>
                 <district type="canton">Saint-Georges-sur-Loire</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l55">55</ref>
+              </listRef>
             </place>
             <place xml:id="LaComte">
               <placeName>La Comté</placeName>
@@ -4301,15 +4922,26 @@
                 <district type="arrondissement">Arras</district>
                 <district type="canton">Aubigny-en-Artois</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l53">53</ref>
+                <ref target="#dubourg_correspondance_l54">54</ref>
+                <ref target="#dubourg_correspondance_l55">55</ref>
+              </listRef>
             </place>
             <place xml:id="Languedoc">
               <placeName>Languedoc</placeName>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l77">77</ref>
+              </listRef>
             </place>
             <place xml:id="LaRochelle">
               <placeName>La Rochelle</placeName>
               <location>
                 <district type="departement">Charente-Maritime, ch.-l. de dép.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l22">22</ref>
+              </listRef>
             </place>
             <place xml:id="Leidekerke">
               <placeName>Leidekerke</placeName>
@@ -4325,15 +4957,34 @@
                 <country>Italie</country>
                 <district type="province">ch.-l. de la province du même nom</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l3">3</ref>
+              </listRef>
             </place>
             <place xml:id="Lyon">
               <placeName>Lyon</placeName>
               <location>
                 <district type="departement">Rhône, ch.-l. de dép.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l3">3</ref>
+                <ref target="#dubourg_correspondance_l5">5</ref>
+                <ref target="#dubourg_correspondance_l7">7</ref>
+                <ref target="#dubourg_correspondance_l8">8</ref>
+                <ref target="#dubourg_correspondance_l10">10</ref>
+                <ref target="#dubourg_correspondance_l16">16</ref>
+                <ref target="#dubourg_correspondance_l23">23</ref>
+                <ref target="#dubourg_correspondance_l27">27</ref>
+                <ref target="#dubourg_correspondance_l37">37</ref>
+                <ref target="#dubourg_correspondance_l51">51</ref>
+                <ref target="#dubourg_correspondance_l86">86</ref>
+              </listRef>
             </place>
             <place xml:id="Maine">
               <placeName>Maine</placeName>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l20">20</ref>
+              </listRef>
             </place>
             <place xml:id="Manosque">
               <placeName>Manosque</placeName>
@@ -4342,12 +4993,18 @@
                 <district type="arrondissement">Forcalquier</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l94">94</ref>
+              </listRef>
             </place>
             <place xml:id="Marseille">
               <placeName>Marseille</placeName>
               <location>
                 <district type="departement">Bouches-du-Rhône, ch.-l. de dép.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l27">27</ref>
+              </listRef>
             </place>
             <place xml:id="Meaux">
               <placeName>Meaux</placeName>
@@ -4355,6 +5012,9 @@
                 <district type="departement">Seine-et-Marne</district>
                 <district type="arrondissement">ch.-l. d'arr.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l78">78</ref>
+              </listRef>
             </place>
             <place xml:id="Meudon">
               <placeName>Meudon</placeName>
@@ -4363,6 +5023,16 @@
                 <district type="arrondissement">Boulogne-Billancourt</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l64">64</ref>
+                <ref target="#dubourg_correspondance_l65">65</ref>
+                <ref target="#dubourg_correspondance_l66">66</ref>
+                <ref target="#dubourg_correspondance_l67">67</ref>
+                <ref target="#dubourg_correspondance_l70">70</ref>
+                <ref target="#dubourg_correspondance_l72">72</ref>
+                <ref target="#dubourg_correspondance_l73">73</ref>
+                <ref target="#dubourg_correspondance_l74">74</ref>
+              </listRef>
             </place>
             <place xml:id="Moncheux-Cayeux">
               <placeName>Monchy-Cayeux</placeName>
@@ -4377,6 +5047,9 @@
               <location>
                 <district type="departement">Tarn-et-Garonne, ch.-l. de dép.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l92">92</ref>
+              </listRef>
             </place>
             <place xml:id="Montereau">
               <placeName>Montereau-Fault-Yonne</placeName>
@@ -4385,6 +5058,9 @@
                 <district type="arrondissement">Provins</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l6">6</ref>
+              </listRef>
             </place>
             <place xml:id="Montmelian">
               <placeName>Montmélian</placeName>
@@ -4396,6 +5072,9 @@
               <event>
                 <p>La ville est assiégée par François I<hi rend="sup">er</hi> en 1536.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l16">16</ref>
+              </listRef>
             </place>
             <place xml:id="Nemours">
               <placeName>Nemours</placeName>
@@ -4404,21 +5083,43 @@
                 <district type="arrondissement">Fontainebleau</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l75">75</ref>
+              </listRef>
             </place>
             <place xml:id="Normandie">
               <placeName>Normandie</placeName>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l87">87</ref>
+              </listRef>
             </place>
             <place xml:id="Orleans-greffe">
               <placeName>Orléans (greffe d')</placeName>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l63">63</ref>
+              </listRef>
             </place>
             <place xml:id="Paris">
               <placeName>Paris</placeName>
               <location>
                 <district type="departement">Paris, ch.l-. de dép.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l24">24</ref>
+                <ref target="#dubourg_correspondance_l45">45</ref>
+                <ref target="#dubourg_correspondance_l51">51</ref>
+                <ref target="#dubourg_correspondance_l68">68</ref>
+                <ref target="#dubourg_correspondance_l71">71</ref>
+                <ref target="#dubourg_correspondance_l80">80</ref>
+                <ref target="#dubourg_correspondance_l84">84</ref>
+              </listRef>
             </place>
             <place xml:id="Paris-parlement">
               <placeName>Paris (parlement de)</placeName>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l20">20</ref>
+                <ref target="#dubourg_correspondance_l38">38</ref>
+              </listRef>
             </place>
             <place xml:id="Pernes">
               <placeName>Pernes-en-Artois</placeName>
@@ -4427,15 +5128,37 @@
                 <district type="arrondissement">Arras</district>
                 <district type="canton">Heuchin</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l43">43</ref>
+                <ref target="#dubourg_correspondance_l44">44</ref>
+                <ref target="#dubourg_correspondance_l45">45</ref>
+                <ref target="#dubourg_correspondance_l46">46</ref>
+                <ref target="#dubourg_correspondance_l47">47</ref>
+                <ref target="#dubourg_correspondance_l48">48</ref>
+                <ref target="#dubourg_correspondance_l50">50</ref>
+                <ref target="#dubourg_correspondance_l51">51</ref>
+              </listRef>
             </place>
             <place xml:id="Picardie">
               <placeName>Picardie</placeName>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l72">72</ref>
+                <ref target="#dubourg_correspondance_l73">73</ref>
+              </listRef>
             </place>
             <place xml:id="Piemont">
               <placeName>Piémont</placeName>
               <location>
                 <country>Italie</country>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l30">30</ref>
+                <ref target="#dubourg_correspondance_l31">31</ref>
+                <ref target="#dubourg_correspondance_l50">50</ref>
+                <ref target="#dubourg_correspondance_l60">60</ref>
+                <ref target="#dubourg_correspondance_l61">61</ref>
+                <ref target="#dubourg_correspondance_l70">70</ref>
+              </listRef>
             </place>
             <place xml:id="Romans">
               <placeName>Romans-sur-Isère</placeName>
@@ -4444,12 +5167,18 @@
                 <district type="arrondissement">Valence</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l1">1</ref>
+              </listRef>
             </place>
             <place xml:id="Rouen">
               <placeName>Rouen</placeName>
               <location>
                 <district type="departement">Seine-Maritime, ch.-l. de dép.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l68">68</ref>
+              </listRef>
             </place>
             <place xml:id="Roussillon">
               <placeName>Roussillon</placeName>
@@ -4458,6 +5187,9 @@
                 <district type="arrondissement">Vienne</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l3">3</ref>
+              </listRef>
             </place>
             <place xml:id="Peronne">
               <placeName>Péronne</placeName>
@@ -4465,6 +5197,9 @@
                 <district type="departement">Somme</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l46">46</ref>
+              </listRef>
             </place>
             <place xml:id="Pontoise">
               <placeName>Pontoise</placeName>
@@ -4472,18 +5207,29 @@
                 <district type="departement">Val-d'Oise</district>
                 <district type="arrondissement">ch.-l. d'arr.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l85">85</ref>
+              </listRef>
             </place>
             <place xml:id="Rennes">
               <placeName>Rennes</placeName>
               <location>
                 <district type="departement">Ile-et-Vilaine</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l21">21</ref>
+              </listRef>
             </place>
             <place xml:id="Rome">
               <placeName>Rome</placeName>
               <location>
                 <country>Italie</country>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l51">51</ref>
+                <ref target="#dubourg_correspondance_l54">54</ref>
+                <ref target="#dubourg_correspondance_l67">67</ref>
+              </listRef>
             </place>
             <place xml:id="SanConstanzo">
               <placeName>San Constanzo al Monte (abbaye)</placeName>
@@ -4496,6 +5242,9 @@
               <event>
                 <p>OSB</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l88">88</ref>
+              </listRef>
             </place>
             <place xml:id="SaintGilles">
               <placeName>Saint-Gilles-du-Gard</placeName>
@@ -4507,6 +5256,9 @@
               <event>
                 <p>Le prieuré hospitalier de Saint-Gilles, de l'ordre de Saint-Jean-de-Jérusalem, était l'un des deux grands prieurés de la langue de Provence avec celui de Toulouse.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l95">95</ref>
+              </listRef>
             </place>
             <place xml:id="StPol">
               <placeName>Saint-Pol-sur-Ternoise</placeName>
@@ -4515,6 +5267,9 @@
                 <district type="arrondissement">Arras</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l49">49</ref>
+              </listRef>
             </place>
             <place xml:id="Seurre">
               <placeName>Seurre</placeName>
@@ -4523,6 +5278,9 @@
                 <district type="arrondissement">Beaune</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l29">29</ref>
+              </listRef>
             </place>
             <place xml:id="Sillans">
               <placeName>Sillans</placeName>
@@ -4531,6 +5289,11 @@
                 <district type="arrondissement">Grenoble</district>
                 <district type="canton">Saint-Étienne-de-Saint-Geoirs</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l77">77</ref>
+                <ref target="#dubourg_correspondance_l78">78</ref>
+                <ref target="#dubourg_correspondance_l79">79</ref>
+              </listRef>
             </place>
             <place xml:id="Staffarda">
               <placeName>Santa Maria de Staffarda (abbaye)</placeName>
@@ -4543,9 +5306,15 @@
               <event>
                 <p>OCist.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l88">88</ref>
+              </listRef>
             </place>
             <place xml:id="Suisse">
               <placeName>Suisse</placeName>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l48">48</ref>
+              </listRef>
             </place>
             <place xml:id="Suse">
               <placeName>Suse</placeName>
@@ -4554,6 +5323,9 @@
                 <district type="region">Piémont</district>
                 <district type="province">Turin</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l10">10</ref>
+              </listRef>
             </place>
             <place xml:id="Therouanne">
               <placeName>Thérouanne</placeName>
@@ -4562,9 +5334,18 @@
                 <district type="arrondissement">Saint-Omer</district>
                 <district type="canton">Aire-sur-la-Lys</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l32">32</ref>
+              </listRef>
             </place>
             <place xml:id="Toulouse-parlement">
               <placeName>Toulouse (parlement de)</placeName>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l7">7</ref>
+                <ref target="#dubourg_correspondance_l9">9</ref>
+                <ref target="#dubourg_correspondance_l92">92</ref>
+                <ref target="#dubourg_correspondance_l93">93</ref>
+              </listRef>
             </place>
             <place xml:id="Turin">
               <placeName>Turin</placeName>
@@ -4572,6 +5353,14 @@
                 <country>Italie</country>
                 <district type="departement">ch.-l. de la province du même nom</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l4">4</ref>
+                <ref target="#dubourg_correspondance_l5">5</ref>
+                <ref target="#dubourg_correspondance_l10">10</ref>
+                <ref target="#dubourg_correspondance_l11">11</ref>
+                <ref target="#dubourg_correspondance_l16">16</ref>
+                <ref target="#dubourg_correspondance_l50">50</ref>
+              </listRef>
             </place>
             <place xml:id="SVallier">
               <placeName>Saint-Vallier</placeName>
@@ -4580,6 +5369,9 @@
                 <district type="arrondissement">Valence</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l4">4</ref>
+              </listRef>
             </place>
             <place xml:id="Valence">
               <placeName>Valence</placeName>
@@ -4589,6 +5381,30 @@
               <event>
                 <p>ville située dans la province du Dauphiné, dans le pays de Valentinois, pays qui fut cédée au roi de France par le comte de Savoie en 1466, en échange du Faucigny.</p>
               </event>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l1">1</ref>
+                <ref target="#dubourg_correspondance_l5">5</ref>
+                <ref target="#dubourg_correspondance_l6">6</ref>
+                <ref target="#dubourg_correspondance_l7">7</ref>
+                <ref target="#dubourg_correspondance_l8">8</ref>
+                <ref target="#dubourg_correspondance_l9">9</ref>
+                <ref target="#dubourg_correspondance_l10">10</ref>
+                <ref target="#dubourg_correspondance_l11">11</ref>
+                <ref target="#dubourg_correspondance_l12">12</ref>
+                <ref target="#dubourg_correspondance_l13">13</ref>
+                <ref target="#dubourg_correspondance_l14">14</ref>
+                <ref target="#dubourg_correspondance_l15">15</ref>
+                <ref target="#dubourg_correspondance_l16">16</ref>
+                <ref target="#dubourg_correspondance_l17">17</ref>
+                <ref target="#dubourg_correspondance_l18">18</ref>
+                <ref target="#dubourg_correspondance_l19">19</ref>
+                <ref target="#dubourg_correspondance_l20">20</ref>
+                <ref target="#dubourg_correspondance_l21">21</ref>
+                <ref target="#dubourg_correspondance_l22">22</ref>
+                <ref target="#dubourg_correspondance_l23">23</ref>
+                <ref target="#dubourg_correspondance_l24">24</ref>
+                <ref target="#dubourg_correspondance_l25">25</ref>
+              </listRef>
             </place>
             <place xml:id="Venise">
               <placeName>Venise</placeName>
@@ -4596,12 +5412,23 @@
                 <country>Italie</country>
                 <district type="departement">ch.-l. de la province du même nom</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l13">13</ref>
+                <ref target="#dubourg_correspondance_l16">16</ref>
+                <ref target="#dubourg_correspondance_l57">57</ref>
+                <ref target="#dubourg_correspondance_l62">62</ref>
+              </listRef>
             </place>
             <place xml:id="Vienne">
               <placeName>Vienne</placeName>
               <location>
                 <district type="departement">Isère, ch.-l. de dép.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l1">1</ref>
+                <ref target="#dubourg_correspondance_l2">2</ref>
+                <ref target="#dubourg_correspondance_l22">22</ref>
+              </listRef>
             </place>
             <place xml:id="Vizille">
               <placeName>Vizille</placeName>
@@ -4610,6 +5437,9 @@
                 <district type="arrondissement">Grenoble</district>
                 <district type="canton">ch.-l. de cant.</district>
               </location>
+              <listRef type="lettres">
+                <ref target="#dubourg_correspondance_l80">80</ref>
+              </listRef>
             </place>
           </listPlace>
         </div>
