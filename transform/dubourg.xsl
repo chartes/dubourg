@@ -170,7 +170,7 @@
     use="distinct-values(.//(tei:persName | tei:placeName | tei:rs)/@ref[starts-with(., '#')] ! substring(., 2))"/>
 
   <xsl:template match="tei:listPerson">
-    <xsl:variable name="max-lettres" select="max(for $p in tei:person return count(key('dub-cite', string($p/@xml:id), $dub-tei)))"/>
+    <xsl:variable name="max-lettres" select="max(for $p in tei:person return count($dub-tei/key('dub-cite', string($p/@xml:id))))"/>
     <div id="index-person">
       <div class="tf-cadre dub-tableau-cadre">
         <xsl:call-template name="tf-barre">
@@ -204,7 +204,7 @@
               <xsl:variable name="mort" select="normalize-space(tei:death)"/>
               <xsl:variable name="dates" select="normalize-space(if ($naissance = '' and $mort = '') then '' else concat($naissance, ' – ', $mort))"/>
               <xsl:variable name="annee" select="if (matches($naissance, '[0-9]{4}')) then replace($naissance, '^[^0-9]*([0-9]{4}).*$', '$1') else ''"/>
-              <xsl:variable name="lettres" select="key('dub-cite', $id, $dub-tei)"/>
+              <xsl:variable name="lettres" select="$dub-tei/key('dub-cite', $id)"/>
               <tr id="{$id}" class="dub-ligne" data-o="{position()}">
                 <td class="dub-c-nom" data-sort="{$nom}" data-f="{tf:plat(string($nom))}">
                   <xsl:apply-templates select="tei:persName"/>
@@ -286,7 +286,7 @@
 
   <xsl:template match="tei:listPlace" xmlns:dub="urn:dubourg:xsl">
     <xsl:variable name="uca" select="'http://www.w3.org/2013/collation/UCA?lang=fr;strength=primary'"/>
-    <xsl:variable name="max-lettres" select="max(for $p in tei:place return count(key('dub-cite', string($p/@xml:id), $dub-tei)))"/>
+    <xsl:variable name="max-lettres" select="max(for $p in tei:place return count($dub-tei/key('dub-cite', string($p/@xml:id))))"/>
     <div id="index-place">
       <div class="tf-cadre dub-tableau-cadre">
         <xsl:call-template name="tf-barre">
@@ -329,7 +329,7 @@
                                        else if ($d/@type = 'province') then 'prov. '
                                        else if ($d/@type = 'commune') then 'comm. ' else '', normalize-space($d)),
                          if ($departement) then tei:location/tei:country ! normalize-space(.) else ())"/>
-              <xsl:variable name="lettres" select="key('dub-cite', $id, $dub-tei)"/>
+              <xsl:variable name="lettres" select="$dub-tei/key('dub-cite', $id)"/>
               <tr id="{$id}" class="dub-ligne" data-o="{position()}">
                 <td class="dub-c-nom" data-sort="{$nom}" data-f="{tf:plat($nom)}">
                   <span class="index-name"><xsl:apply-templates select="tei:placeName/node()"/></span>
