@@ -74,6 +74,28 @@
       <xsl:apply-templates/>
     </p>
   </xsl:template>
+  <!-- 2026-10-14 : présentation d'un groupe (« Enquête sur la Great Bible ») : un titre et des
+       paragraphes, donc un bloc et non un <p> (un titre et des <p> dans un <p> : HTML invalide,
+       cassé par le navigateur). Classe presentation et non argument : texte courant, pas le style
+       des résumés de lettre (petit corps, italique, retrait). -->
+  <xsl:template match="tei:argument[tei:head]" priority="2">
+    <div class="presentation">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+
+  <!-- 2026-10-14 : niveaux de titre d'une page de groupe : le titre du groupe en h1, celui de
+       sa présentation et ceux de ses lettres en h2 (hteiml mettait tout en h1). Une lettre
+       servie seule (sans groupe autour) garde son titre en h1. -->
+  <xsl:template match="tei:argument/tei:head | tei:group//tei:text/tei:front/tei:head" priority="2">
+    <h2 class="head"><xsl:apply-templates/></h2>
+  </xsl:template>
+
+  <!-- 2026-10-14 : enveloppe DoTS d'un fragment, transparente (sans modèle, hteiml
+       l'affichait en span class="error", « <dts:wrapper> » en rouge en tête de page). -->
+  <xsl:template match="*[local-name() = 'wrapper']">
+    <xsl:apply-templates/>
+  </xsl:template>
   <xsl:template match="tei:argument/tei:p">
     <xsl:choose>
       <xsl:when test="@n">
