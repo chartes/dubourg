@@ -6,10 +6,14 @@
   xmlns:tf="urn:elec:tableau-filtrable"
   exclude-result-prefixes="tei tf">
 
+  <!-- ==== 0. DÉCLARATIONS : imports, sortie, paramètres, variables, clés, fonctions ==== -->
+
   <!-- [v2 H1] La feuille historique importait Diple (../../diple/transform/tei_html.xsl). -->
   <xsl:import href="../../renderers/hteiml/xsl/tei2html.xsl"/>
+
   <!-- Tableaux triables et filtrables : copie du module commun, à côté de la feuille. -->
   <xsl:import href="tableau-filtrable.xsl"/>
+
   <!-- [v2 H4] Sans indent="no", l'indentation de la sortie coupe les mots (« iiii e d'aoust »). -->
   <xsl:output indent="no"/>
 
@@ -30,38 +34,27 @@
        ==================================================================== -->
 
   <xsl:variable name="index-personnes" select="'dubourg_correspondance_idx_person'"/>
+
   <xsl:variable name="index-lieux" select="'dubourg_correspondance_idx_place'"/>
 
-  <!-- Le croisillon manque dans quelques @ref (ref="Daugerant") : on le retire s'il est là,
-       pour écrire l'ancre de la même façon dans tous les cas. Les <rs> (« le cardinal »)
-       disent par @type s'ils désignent une personne ou un lieu. -->
-  <xsl:template match="tei:persName[@ref] | tei:placeName[@ref]
-                       | tei:rs[@ref][@type = 'person' or @type = 'place']">
-    <xsl:variable name="personne" select="boolean(self::tei:persName or @type = 'person')"/>
-    <xsl:variable name="index">
-      <xsl:choose>
-        <xsl:when test="$personne"><xsl:value-of select="$index-personnes"/></xsl:when>
-        <xsl:otherwise><xsl:value-of select="$index-lieux"/></xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
-    <a>
-      <xsl:choose>
-        <xsl:when test="$personne">
-          <xsl:attribute name="property">dbo:person</xsl:attribute>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:attribute name="property">dbo:place</xsl:attribute>
-        </xsl:otherwise>
-      </xsl:choose>
-      <xsl:call-template name="atts"/>
-      <!-- Après « atts » : pour un @ref sans croisillon, hteiml y écrit href="Daugerant",
-           qui remplacerait notre lien si on le posait avant. -->
-      <xsl:attribute name="href">
-        <xsl:value-of select="concat('?refId=', $index, '#', translate(@ref, '#', ''))"/>
-      </xsl:attribute>
-      <xsl:apply-templates/>
-    </a>
-  </xsl:template>
+  <!-- IV. Index des lieux : même tableau que l'index des personnes (2026-10-13).
+       Département ou pays : le district de type departement, sinon le pays ; le filtre en
+       liste porte sur le département sans sa précision (« Somme » pour « Somme, ch.-l. de
+       dép. ») ou sur le pays. Précisions : les autres districts (arr., cant., région,
+       prov., comm.), le pays quand il y a aussi un département, et la notice éventuelle.
+       Lettres : comme pour les personnes. -->
+  <xsl:function name="dub:lieu-cle" as="xs:string" xmlns:dub="urn:dubourg:xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xsl:param name="place" as="element()"/>
+    <xsl:variable name="dep" select="normalize-space(string(dub:departement($place)))"/>
+    <xsl:sequence select="if ($dep != '') then normalize-space(tokenize($dep, ',')[1]) else normalize-space(string(($place/tei:location/tei:country)[1]))"/>
+  </xsl:function>
+
+  <xsl:function name="dub:departement" as="element()?" xmlns:dub="urn:dubourg:xsl">
+    <xsl:param name="place" as="element()"/>
+    <xsl:sequence select="$place/tei:location/tei:district[@type = 'departement'][matches(normalize-space(.), '^\p{Lu}')][1]"/>
+  </xsl:function>
+
+  <!-- ==== 1. HISTORIQUE : surcharge reprise de la feuille de l'ÉLEC (rendu du texte de l'édition) ==== -->
 
   <!-- ====================================================================
        II. Feuille historique de l'ÉLEC
@@ -74,28 +67,7 @@
       <xsl:apply-templates/>
     </p>
   </xsl:template>
-  <!-- 2026-10-14 : présentation d'un groupe (« Enquête sur la Great Bible ») : un titre et des
-       paragraphes, donc un bloc et non un <p> (un titre et des <p> dans un <p> : HTML invalide,
-       cassé par le navigateur). Classe presentation et non argument : texte courant, pas le style
-       des résumés de lettre (petit corps, italique, retrait). -->
-  <xsl:template match="tei:argument[tei:head]" priority="2">
-    <div class="presentation">
-      <xsl:apply-templates/>
-    </div>
-  </xsl:template>
 
-  <!-- 2026-10-14 : niveaux de titre d'une page de groupe : le titre du groupe en h1, celui de
-       sa présentation et ceux de ses lettres en h2 (hteiml mettait tout en h1). Une lettre
-       servie seule (sans groupe autour) garde son titre en h1. -->
-  <xsl:template match="tei:argument/tei:head | tei:group//tei:text/tei:front/tei:head" priority="2">
-    <h2 class="head"><xsl:apply-templates/></h2>
-  </xsl:template>
-
-  <!-- 2026-10-14 : enveloppe DoTS d'un fragment, transparente (sans modèle, hteiml
-       l'affichait en span class="error", « <dts:wrapper> » en rouge en tête de page). -->
-  <xsl:template match="*[local-name() = 'wrapper']">
-    <xsl:apply-templates/>
-  </xsl:template>
   <xsl:template match="tei:argument/tei:p">
     <xsl:choose>
       <xsl:when test="@n">
@@ -172,6 +144,63 @@
     <xsl:apply-templates/>
   </xsl:template>
 
+  <!-- ==== 2. BLOCS HTEIML GÉNÉRIQUES : enveloppe dts:wrapper, notes, apparat critique, bibliographie (listBibl) ==== -->
+
+  <!-- 2026-10-14 : enveloppe DoTS d'un fragment, transparente (sans modèle, hteiml
+       l'affichait en span class="error", « <dts:wrapper> » en rouge en tête de page). -->
+  <xsl:template match="*[local-name() = 'wrapper']">
+    <xsl:apply-templates/>
+  </xsl:template>
+
+  <!-- ==== 3. PROPRE AU PROJET ==== -->
+
+  <!-- Le croisillon manque dans quelques @ref (ref="Daugerant") : on le retire s'il est là,
+       pour écrire l'ancre de la même façon dans tous les cas. Les <rs> (« le cardinal »)
+       disent par @type s'ils désignent une personne ou un lieu. -->
+  <xsl:template match="tei:persName[@ref] | tei:placeName[@ref]
+                       | tei:rs[@ref][@type = 'person' or @type = 'place']">
+    <xsl:variable name="personne" select="boolean(self::tei:persName or @type = 'person')"/>
+    <xsl:variable name="index">
+      <xsl:choose>
+        <xsl:when test="$personne"><xsl:value-of select="$index-personnes"/></xsl:when>
+        <xsl:otherwise><xsl:value-of select="$index-lieux"/></xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <a>
+      <xsl:choose>
+        <xsl:when test="$personne">
+          <xsl:attribute name="property">dbo:person</xsl:attribute>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="property">dbo:place</xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
+      <xsl:call-template name="atts"/>
+      <!-- Après « atts » : pour un @ref sans croisillon, hteiml y écrit href="Daugerant",
+           qui remplacerait notre lien si on le posait avant. -->
+      <xsl:attribute name="href">
+        <xsl:value-of select="concat('?refId=', $index, '#', translate(@ref, '#', ''))"/>
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </a>
+  </xsl:template>
+
+  <!-- 2026-10-14 : présentation d'un groupe (« Enquête sur la Great Bible ») : un titre et des
+       paragraphes, donc un bloc et non un <p> (un titre et des <p> dans un <p> : HTML invalide,
+       cassé par le navigateur). Classe presentation et non argument : texte courant, pas le style
+       des résumés de lettre (petit corps, italique, retrait). -->
+  <xsl:template match="tei:argument[tei:head]" priority="2">
+    <div class="presentation">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+
+  <!-- 2026-10-14 : niveaux de titre d'une page de groupe : le titre du groupe en h1, celui de
+       sa présentation et ceux de ses lettres en h2 (hteiml mettait tout en h1). Une lettre
+       servie seule (sans groupe autour) garde son titre en h1. -->
+  <xsl:template match="tei:argument/tei:head | tei:group//tei:text/tei:front/tei:head" priority="2">
+    <h2 class="head"><xsl:apply-templates/></h2>
+  </xsl:template>
 
   <!-- ====================================================================
        III. Index des personnes : tableau triable et filtrable (2026-10-13)
@@ -280,22 +309,6 @@
   <xsl:template match="tei:event">
     <xsl:apply-templates/>
   </xsl:template>
-
-  <!-- IV. Index des lieux : même tableau que l'index des personnes (2026-10-13).
-       Département ou pays : le district de type departement, sinon le pays ; le filtre en
-       liste porte sur le département sans sa précision (« Somme » pour « Somme, ch.-l. de
-       dép. ») ou sur le pays. Précisions : les autres districts (arr., cant., région,
-       prov., comm.), le pays quand il y a aussi un département, et la notice éventuelle.
-       Lettres : comme pour les personnes. -->
-  <xsl:function name="dub:lieu-cle" as="xs:string" xmlns:dub="urn:dubourg:xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xsl:param name="place" as="element()"/>
-    <xsl:variable name="dep" select="normalize-space(string(dub:departement($place)))"/>
-    <xsl:sequence select="if ($dep != '') then normalize-space(tokenize($dep, ',')[1]) else normalize-space(string(($place/tei:location/tei:country)[1]))"/>
-  </xsl:function>
-  <xsl:function name="dub:departement" as="element()?" xmlns:dub="urn:dubourg:xsl">
-    <xsl:param name="place" as="element()"/>
-    <xsl:sequence select="$place/tei:location/tei:district[@type = 'departement'][matches(normalize-space(.), '^\p{Lu}')][1]"/>
-  </xsl:function>
 
   <xsl:template match="tei:listPlace" xmlns:dub="urn:dubourg:xsl">
     <xsl:variable name="uca" select="'http://www.w3.org/2013/collation/UCA?lang=fr;strength=primary'"/>
@@ -429,5 +442,9 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+
+  <!-- ==== 4. MÉCANISMES COMMUNS : tableau filtrable (tf-*), liens vers l'ancien site (D5), liens internes entre fragments ==== -->
+
+  <!-- (aucun) -->
 
 </xsl:transform>
